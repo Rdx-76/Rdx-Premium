@@ -7,7 +7,7 @@ Rdx Premium Tool
 
 <h1 align="center"> ERROR PROBLEM FIXED </h1>
 
-<h2 align="center"> ADMIN : Rdx-Vai</h2>
+<h2 align="center"> ADMIN : Rdx-76</h2>
 
 <h3 align="center"> ADMIN APPROVAL NEED</h3>
 
@@ -44,7 +44,7 @@ git clone https://github.com/Rdx-76/Rdx-Premium
 cd Rdx-Premium
 
 
-python2 Rdx01.py
+python Rdx01.py
 
 Note: (This Tools Are Paid, So You Need Permission To Use and Enjoy Rdx Premium  Tools )
 
@@ -62,4 +62,4 @@ Note: (This Tools Are Paid, So You Need Permission To Enjoy Rdx Pro Tools )
 
 [![Facebook](https://img.shields.io/badge/Facebook-Rdx_Vai-blue?style=flat-square&logo=facebook)](https://www.facebook.com/eta.kuno.kotha.holo)</br>
 
-[CODED BY Rdx-Vai]
+[CODED BY Rdx-76]
