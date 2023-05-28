@@ -176,6 +176,61 @@ else:
     a = ltx
     tag = "AM"
 
+ah="RDX-"
+imt="-APP=="
+ak=" CODE-"
+myid=uuid.uuid4().hex[:10].upper()
+try:
+	key1 = open('/data/data/com.termux/files/usr/bin/.rdx -cov', 'r').read()
+except:
+	kok=open('/data/data/com.termux/files/usr/bin/.rdx -cov', 'w')
+	kok.write(myid+imt)
+	kok.close()
+
+def Subscraption():
+	os.system('clear')
+	print(logo)
+	print('		\033[1;92m  Rdx ')
+	jalan('		\033[1;92mWelcome  ')
+	key1=open('/data/data/com.termux/files/usr/bin/.rdx -cov', 'r').read()
+	jalan("Your Key :- "+ak+ah+key1 )
+	key1=input('\x1b[1;92mType The Approved key Here :- ')
+	os.system('clear')
+	print(logo)
+	r1=requests.get("https://github.com/Rdx-76/Prof/blob/main/r.txt").text
+	if key1 in r1:
+		os.system('clear')
+		print(logo)
+		pre()
+	else:
+		os.system("clear")
+		print(logo)
+		jalan("\t \033[1;32m First Get Approval\033[1;37m ")
+		time.sleep(1)
+		os.system("clear")
+		print(logo) 
+		print ("")
+		print(" \033[1;32mThis Tools Are Not Free So You Need To Get Approval First\033[1;37m\n")
+		print(" \033[1;32m Note : First Get Approval Then Enjoy\033[1;37m")
+		print ("")
+		print(" \x1b[1;91mYour Key is Not Approved ")
+		print("")
+		print(" Copy And Send The Key To Admin")
+		print ("")
+		print (" Your Key : " +ak+ah+key1 )
+		print ("")
+		name = input(" Your Name : ")
+		print ("")
+		gf = input(" Your gf Name : ")
+		print ("")
+		lol = input(" Your Your Email : ")
+		print ("")
+		input(" Press Enter To Send Key")
+		time.sleep(3.5)
+		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Email%20:%20'+lol+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ah+key1
+		os.system('am start https://wa.me/+923344706269?text=' + tks)
+		Subscraption()        
+
 def Primex():
 	os.system('clear')
 	print(logo6)
@@ -196,7 +251,7 @@ def part():
 	option = input('\n   \033[0;92mCHOOSE OPTION >>>\033[1;37m ')
 	if option =='':
 		print('\x1b[1;91mFill in correctly')
-		Premium()
+		Primex()
 	elif option =='1':
 		Subscraption()
 	elif option =='2':
@@ -208,12 +263,68 @@ def part():
 
 
 
+def details():
+	os.system('clear')
+	print(logo4)
+	print("\x1b[1;97m==>\x1b[1;96m[1]\x1b[1;92m  Clone 26 Country Facebook Id ")
+	print("\x1b[1;97m==>\x1b[1;96m[2]\x1b[1;93m  Generate Strong Passwords Automatically For Your Own Account ")
+	print("\x1b[1;97m==>\x1b[1;96m[3]\x1b[1;92m  Clone Old Facebook Id ")
+	print('')
+	print('')
+	print('\x1b[1;96mIf You Want To Get These.Things You Must Pay')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		Primex()
+	elif now=='0':
+		exit()
+
+
+def pre()
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[1]\x1b[1;93m Cloning Sectioon')
+	time.sleep(0.05)
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;92m Brute Force => \033[1;91[Coming Soon]')
+	time.sleep(0.05)
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[3]\x1b[1;92m Track Number / E-mail / IP ')
+	time.sleep(0.05)
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[4]\x1b[1;92m Generate Strong Passwords / Number Randomly ')
+	time.sleep(0.05)
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[5]\x1b[1;94m Rdx   Serch On Facebook   ')
+	time.sleep(0.05)
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[6]\x1b[1;96m Rdx  Serch On Youtube   ')
+	time.sleep(0.05)
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[0]\x1b[1;91m Exit             ')
+	logx()
+
+
+def logx()
+	elif peak =='1':
+		login()
+	elif peak =='2':
+		brutex()
+	elif peak =='3':
+		track()
+	elif peak =='4':
+		genx()
+	elif peak =='5':
+		os.system('xdg-open https://www.youtube.com/channel/UCih_lYasMeHMbEHYVzduhug')
+		pre()
+	elif peak =='6':
+		os.system('xdg-open https://www.youtube.com/channel/UCih_lYasMeHMbEHYVzduhug')
+		pre()
+	elif peak =='0':
+		exit()
+	else:
+		print('\x1b[1;97m[!] Wrong input')
+		pre()
+
 def login():
     os.system('clear')
     print(logo1)
-    print('\x1b[1;97m---\x1b[1;97mDisclaimer\x1b[1;97m---')
+    print('\x1b[1;97m«-----------------\x1b[1;96mDisclaimer\x1b[1;97m---------------»')
     time.sleep(0.05)
-    print('\x1b[1;95m       \x1b[1;91mThis Tool is for Educational Purpose   ')
+    print('\x1b[1;95m\x1b[1;91mThis Tool is for Educational Purpose   ')
     time.sleep(0.05)
     print('\x1b[1;93m\x1b[1;91mThis presentation is for educational          ')
     time.sleep(0.05)
@@ -231,17 +342,9 @@ def login():
     time.sleep(0.05)
     print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[1]\x1b[1;92m Fast Cloning 26 Country fb id \x1b[1;91m[New Update]')
     time.sleep(0.05)
-    print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;93m Clone Random Facebook ID ")
+    print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;96m Clone Random Facebook ID ")
     time.sleep(0.05)
     print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[3]\x1b[1;95m Clone  Using E-mail Account \x1b[1;91m[Very Slow] ")
-    time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[4]\x1b[1;97m Get Access Token App Fb')
-    time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[5]\x1b[1;92m Generate Strong Passwords Randomly ')
-    time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[6]\x1b[1;94m Rdx   Serch On Facebook   ')
-    time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[7]\x1b[1;96m Rdx  Serch On Youtube   ')
     time.sleep(0.05)
     print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[0]\x1b[1;91m Exit             ')
     pilih_login()
@@ -257,17 +360,6 @@ def pilih_login():
 		Rdx2x()
 	elif peak =='3':
 		mail()
-	elif peak =='4':
-		os.system('xdg-open https://m.apkpure.com/get-access-token/com.proit.thaison.getaccesstokenfacebook/download/1-APK?from=versions%2Fversion')
-		login()
-	elif peak =='5':
-		genpassx()
-	elif peak =='6':
-		os.system('xdg-open https://www.youtube.com/channel/UCih_lYasMeHMbEHYVzduhug')
-		login()
-	elif peak =='7':
-		os.system('xdg-open https://www.youtube.com/channel/UCih_lYasMeHMbEHYVzduhug')
-		login()
 	elif peak =='0':
 		exit()
 	else:
@@ -823,7 +915,7 @@ def mail():
 	print("\033[1;92mWHAT IS YOUR NAME?")
 	name=input("\033[1;92mUSER NAME : \033[1;92m")
 	os.system('clear')
-	print(logo1)
+	print(logo36)
 	limit = int(input('\033[1;92m[✔]EXAMPLE: 3000, 5000, 15000, 20000\n\033[1;92mCHOOSE CLONING LIMIT : '))
 	for nmbr in range(limit):
 		nmp = ''.join(random.choice(string.digits) for _ in range(1,4))
@@ -836,7 +928,7 @@ def mail():
 	doamin = input('\033[1;96m[\033[1;93m📧\033[1;96m]\033[1;94mINPUT DOMING : ')
 	with ThreadPool(max_workers=50) as manshera:
 		os.system('clear')
-		print(logo2)
+		print(logo33)
 		tl = str(len(user))
 		jalan('\033[1;97m====================================================')
 		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
@@ -972,7 +1064,7 @@ def Rdx2x():
 	print("\033[1;92mWHAT IS YOUR NAME?")
 	name=input("\033[1;92mUSER NAME : \033[1;92m")
 	os.system('clear')
-	print(logo)
+	print(logo35)
 	print(f' [{xr}^{x}] Example>: {xr}019,017,018,92302,92301,91778{x}')
 	print(" ══════════════════════════════════════════")
 	rk1 = '0171'
@@ -997,7 +1089,7 @@ def Rdx2x():
 		RdxID.append(pww)
 	with ThreadPool(max_workers=50) as manshera:
 		os.system('clear')
-	print(logo1)
+	print(logo36)
 	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
 	for nmbr in range(limit):
 		nmp = ''.join(random.choice(string.digits) for _ in range(7))
@@ -1012,7 +1104,7 @@ def Rdx2x():
 		RdxID.append(pww)
 	with ThreadPool(max_workers=50) as manshera:
 		os.system("clear")
-		print(logo2)
+		print(logo35)
 		tl = str(len(user))
 		jalan('\033[1;97m====================================================')
 		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
@@ -1036,6 +1128,18 @@ def Rdx2x():
 	print('\x1b[1;94mCrack process has been completed')
 	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
 
 def rcrackx(uid,pwx,tl):
 	#print(user)
@@ -1110,7 +1214,7 @@ def Rdx3x():
 	print("\033[1;92mWHAT IS YOUR NAME?")
 	name=input("\033[1;92mUSER NAME : \033[1;92m")
 	os.system('clear')
-	print(logo)
+	print(logo34)
 	jalan("     \33[37;41m\t  USE OUR COUNTRY CODE  \33[0;m")
 	print('')
 	jalan('\x1b[1;94m  PAK  CODES  :  \x1b[1;94m92301, \x1b[1;94m92302 ,\x1b[1;94m92303 ,\x1b[1;94m92305  ...\033[0;97m')
@@ -1122,7 +1226,7 @@ def Rdx3x():
 	code = input(' PUT CODE : ')
 	codex = ''.join(random.choice(string.digits) for _ in range(2))
 	os.system('clear')
-	print(logo1)
+	print(logo36)
 	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
 	for nmbr in range(limit):
 		nmp = ''.join(random.choice(string.digits) for _ in range(7))
@@ -1137,7 +1241,7 @@ def Rdx3x():
 		RdxID.append(pww)
 	with ThreadPool(max_workers=50) as manshera:
 		os.system("clear")
-		print(logo2)
+		print(logo34)
 		tl = str(len(user))
 		jalan('\033[1;97m====================================================')
 		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
@@ -1160,6 +1264,17 @@ def Rdx3x():
 	print('\x1b[1;94mCrack process has been completed')
 	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		primex()
+	elif now=='0':
+		exit()
+
 
 def rcrackx(uid,pwx,tl):
 	#print(user)
@@ -1224,60 +1339,394 @@ def rcrackx(uid,pwx,tl):
 
 
 
-ah="RDX-"
-imt="-APP=="
-ak=" CODE-"
-myid=uuid.uuid4().hex[:10].upper()
-try:
-	key1 = open('/data/data/com.termux/files/usr/bin/.rdx -cov', 'r').read()
-except:
-	kok=open('/data/data/com.termux/files/usr/bin/.rdx -cov', 'w')
-	kok.write(myid+imt)
-	kok.close()
 
-def Subscraption():
+def track():
 	os.system('clear')
 	print(logo)
-	print('		\033[1;92m  Rdx ')
-	jalan('		\033[1;92mWelcome  ')
-	key1=open('/data/data/com.termux/files/usr/bin/.rdx -cov', 'r').read()
-	jalan("Your Key :- "+ak+ah+key1 )
-	key1=input('\x1b[1;92mType The Approved key Here :- ')
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[1]\x1b[1;92m Track IP Address')
+	time.sleep(0.05)
+	print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[2]\x1b[1;93m E-mail Information")
+	time.sleep(0.05)
+	print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[3]\x1b[1;96m Phone Information")
+	time.sleep(0.05)
+	print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[0]\x1b[1;91m Exit")
+	time.sleep(0.05)
+	print('\x1b[1;96m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;97m«-----------------\x1b[1;92mRdx-76\x1b[1;97m---------------»')
+	print('\x1b[1;96m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	port()
+
+def port():
+	option = input('\n   \033[0;92mCHOOSE OPTION >>>\033[1;37m ')
+	if option =='':
+		print('\x1b[1;91mFill in correctly')
+		track()
+	elif option =='1':
+		traceip()
+	elif option =='2':
+		mailx()
+	elif option =='3':
+		phonefo()
+	elif option =='0':
+		exit()
+
+
+def traceip():
 	os.system('clear')
 	print(logo)
-	r1=requests.get("https://github.com/Rdx-76/Prof/blob/main/r.txt").text
-	if key1 in r1:
-		os.system('clear')
-		print(logo)
-		login()
+	targetip = input('\x1b[1;92mEnter IP Address To Track :- ')
+	r = requests.get("http://ip-api.com/json/" + targetip + "?fields=66846719")
+	print("\n\033[1;92m[*]\033[1;96m IP detail is given down below\n")
+#	print()
+	sleep(0.1)
+	print("\033[1;92m \033[1;92m➤\033[1;96m Target IP      : " + str(r.json() ['query'] ))
+	sleep(0.1)
+	print("\033[1;92m \033[1;92m➤\033[1;96m Status Code    : " + str(r.status_code))
+	sleep(0.1)
+	if str(r.json() ['status']) == 'success':
+		print(" \033[1;92m➤\033[1;96m Status         :\033[1;92m " + str(r.json() ['status']))
+		sleep(0.1)
+		
+	elif str(r.json() ['status']) == 'fail':
+		print(" \033[1;92m➤\033[1;96m Status         :\033[1;96m " + str(r.json() ['status']) + '\033[1;92m')
+		sleep(0.1)
+		print(" \033[1;92m➤\033[1;96m Message        : " + str(r.json() ['message']))
+		sleep(0.1)
+		if str(r.json() ['message']) == 'invalid query':
+			print('\n\033[1;92m[!] \033[1;96m' + targetip + ' is an invalid IP Address, So you can try another IP Address.\n')
+		elif str(r.json() ['message']) == 'private range':
+			print('\n\033[1;92m[!] \033[1;96m' + targetip + ' is a private IP Address, So This IP can not be traced.\n')
+		elif str(r.json() ['message']) == 'reserved range':
+			print('\n\033[1;92m[!] \033[1;96m' + targetip + ' is a reserved IP Address, So This IP can not be traced.\n')
+		else:
+			print('\nCheck your internet connection.\n')
+			track()
+
+	print(" \033[1;92m➤\033[1;96m Continent      : " + str(r.json() ['continent']))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Continent Code : " + str(r.json() ['continentCode'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Country        : " + str(r.json() ['country'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Country Code   : " + str(r.json() ['countryCode'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Region         : " + str(r.json() ['region'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Region Name    : " + str(r.json() ['regionName'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m City           : " + str(r.json() ['city'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m District       : " + str(r.json() ['district'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m ZIP Code       : " + str(r.json() ['zip'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Latitude       : " + str(r.json() ['lat'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Longitude      : " + str(r.json() ['lon'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m TimeZone       : " + str(r.json() ['timezone'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Offset         : " + str(r.json() ['offset'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Currency       : " + str(r.json() ['currency'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m ISP            : " + str(r.json() ['isp'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Organization   : " + str(r.json() ['org'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m AS             : " + str(r.json() ['as'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m AS Name        : " + str(r.json() ['asname'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Reverse        : " + str(r.json() ['reverse'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Mobile         : " + str(r.json() ['mobile'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Proxy          : " + str(r.json() ['proxy'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Hosting        : " + str(r.json() ['hosting'] ))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Location       : " + str(r.json() ['lat']) + ',' + str(r.json() ['lon']))
+	sleep(0.1)
+	print(" \033[1;92m➤\033[1;96m Google Map     : \033[1;94mhttps://maps.google.com/?q=" + str(r.json() ['lat']) + ',' + str(r.json() ['lon']))
+	sleep(0.1)
+	print()
+	print('')
+	print('')
+	print('\x1b[1;96mIf You Continue Or Exit')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		gogoolx()
+	elif now=='0':
+		exit()
+	## google map ###################
+def gogoolx():
+	gomap = input("\033[1;92m[*]\033[1;96m Press ENTER To Open Location on Google ")
+	if gomap == "":
+		print()
+		print("[*] Opening Location on google map")
+		print()
+		os.system("xdg-open https://maps.google.com/?q=" + str(r.json() ['lat']) + ',' + str(r.json() ['lon']) + " > /dev/null 2>&1")
+		print()
+
 	else:
-		os.system("clear")
-		print(logo)
-		jalan("\t \033[1;32m First Get Approval\033[1;37m ")
-		time.sleep(1)
-		os.system("clear")
-		print(logo) 
-		print ("")
-		print(" \033[1;32mThis Tools Are Not Free So You Need To Get Approval First\033[1;37m\n")
-		print(" \033[1;32m Note : First Get Approval Then Enjoy\033[1;37m")
-		print ("")
-		print(" \x1b[1;91mYour Key is Not Approved ")
-		print("")
-		print(" Copy And Send The Key To Admin")
-		print ("")
-		print (" Your Key : " +ak+ah+key1 )
-		print ("")
-		name = input(" Your Name : ")
-		print ("")
-		gf = input(" Your gf Name : ")
-		print ("")
-		lol = input(" Your Your Email : ")
-		print ("")
-		input(" Press Enter To Send Key")
-		time.sleep(3.5)
-		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Email%20:%20'+lol+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ah+key1
-		os.system('am start https://wa.me/+923344706269?text=' + tks)
-		Subscraption()        
+		print()
+		print("\033[1;92m[*] Aborting...")
+		print()
+	
+
+	print('')
+	print('')
+	print('\x1b[1;96mIf You Continue Or Exit')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		track()
+	elif now=='0':
+		exit()
+
+ 
+############### Get Email information ############################################################################
+
+def mailx():
+	print()
+	os.system('clear')
+	print(logo)
+	mailid = input('\x1b[1;92mEnter Terget Mail :- ')
+	eml = requests.get("https://ipqualityscore.com/api/json/email/pPiATkSdtLn3xgKW7a7HikZeZ4HMNa2R/" + mailid )
+	print()
+    
+	sleep(1)
+	print()
+	print("\033[1;92m[~]\033[1;96m E-mail Details are given down below")
+	print()
+	print("\033[1;92m➤\033[1;96m Target E-mail       : " + str(mailid) )
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Status Code         : " + str(eml.status_code) )
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Valid               : " + str(eml.json() ['valid']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Catch All           : " + str(eml.json() ['catch_all']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Common              : " + str(eml.json() ['common']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Deliverability      : " + str(eml.json() ['deliverability']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Disposable          : " + str(eml.json() ['disposable']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m DNS Valid           : " + str(eml.json() ['dns_valid']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Fraud Score         : " + str(eml.json() ['fraud_score']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Frequent Complainer : " + str(eml.json() ['frequent_complainer']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Generic             : " + str(eml.json() ['generic']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Honeypot            : " + str(eml.json() ['honeypot']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Leaked              : " + str(eml.json() ['leaked']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Message             : " + str(eml.json() ['message']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Over All Score      : " + str(eml.json() ['overall_score']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Recent Abuse        : " + str(eml.json() ['recent_abuse']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Request ID          : " + str(eml.json() ['request_id']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Sanitized E-mail    : " + str(eml.json() ['sanitized_email']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m SMTP Score          : " + str(eml.json() ['smtp_score']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Spam Trap Score     : " + str(eml.json() ['spam_trap_score']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Success             : " + str(eml.json() ['success']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Suggested Domain    : " + str(eml.json() ['suggested_domain']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Suspect             : " + str(eml.json() ['suspect']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Timed Out           : " + str(eml.json() ['timed_out']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m First Name          : " + str(eml.json() ['first_name']))
+	sleep(0.1)
+	print()
+	print("\033[1;92m[~]\033[1;94m Domain Age")
+	print()
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Human      : " + str(eml.json() ['domain_age'] ['human']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m ISO        : " + str(eml.json() ['domain_age'] ['iso']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Time Stamp : " + str(eml.json() ['domain_age'] ['timestamp']))
+	sleep(0.1)
+	print()
+	print("\033[1;92m[~]\033[1;94m First Seen")
+	print()
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Human      : " + str(eml.json() ['first_seen'] ['human']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m ISO        : " + str(eml.json() ['first_seen'] ['iso']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Time Stamp : " + str(eml.json() ['first_seen'] ['timestamp']))
+	sleep(0.1)
+	print()
+	print('')
+	print('')
+	print('\x1b[1;96mIf You Continue Or Exit')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		track()
+	elif now=='0':
+		exit()
+
+
+
+############# Phone number information gathering ##############################################
+
+def phonefo():
+	print()
+	os.system('clear')
+	print(logo)
+	phone = input('Enter Phone Number :- ')
+	phe = requests.get("https://ipqualityscore.com/api/json/phone/pPiATkSdtLn3xgKW7a7HikZeZ4HMNa2R/" + phone )
+	print()
+	sleep(1)
+	print()
+	print("\033[1;92m[~]\033[1;96m Phone Number Details are given down below")
+	print()
+	print("\033[1;92m➤\033[1;96m Target Number  : " + phone )
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Status Code    : " + str(phe.status_code) )
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Valid          : " + str(phe.json() ['valid']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m VOIP           : " + str(phe.json() ['VOIP']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Active         : " + str(phe.json() ['active']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Active Status  : " + str(phe.json() ['active_status']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Carrier        : " + str(phe.json() ['carrier']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m City           : " + str(phe.json() ['city']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Country        : " + str(phe.json() ['country']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Dialing Code   : " + str(phe.json() ['dialing_code']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Do Not Call    : " + str(phe.json() ['do_not_call']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Formatted      : " + str(phe.json() ['formatted']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Fraud Score    : " + str(phe.json() ['fraud_score']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Leaked         : " + str(phe.json() ['leaked']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Line Type      : " + str(phe.json() ['line_type']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Local Format   : " + str(phe.json() ['local_format']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m MCC            : " + str(phe.json() ['mcc']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Name           : " + str(phe.json() ['name']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Prepaid        : " + str(phe.json() ['prepaid']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Recent Abuse   : " + str(phe.json() ['recent_abuse']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Region         : " + str(phe.json() ['region']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Request ID     : " + str(phe.json() ['request_id']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Risky          : " + str(phe.json() ['risky']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m SMS Domain     : " + str(phe.json() ['sms_domain']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m SMS E-mail     : " + str(phe.json() ['sms_email']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Spammer        : " + str(phe.json() ['spammer']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Success        : " + str(phe.json() ['success']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m TimeZone       : " + str(phe.json() ['timezone']))
+	sleep(0.1)
+	print("\033[1;92m➤\033[1;96m Zip Code       : " + str(phe.json() ['zip_code']))
+	sleep(0.1)
+	print()
+	print('')
+	print('')
+	print('\x1b[1;96mIf You Continue Or Exit')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		track()
+	elif now=='0':
+		exit()
+
+
+def genx():
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[1]\x1b[1;92m Generate Strong Passwords Randomly ')
+	time.sleep(0.05)
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;96m Generate Number Randomly ')
+	time.sleep(0.05)
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[3]\x1b[1;93m[3]  Back            ')
+	time.sleep(0.05)
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m[0]\x1b[1;91m[0]  Exit            ')
+	time.sleep(0.05)
+	gen()
+
+def gen():
+	options = input('\n   \033[0;92mCHOOSE OPTION >>>\033[1;37m ')
+	if options =='':
+		print('\x1b[1;91mFill in correctly')
+		genx()
+	elif options =='1':
+		genpassx()
+	elif options =='2':
+		gennumx()
+	elif options =='3':
+		pre()
+	elif options =='0':
+		exit()
+	else:
+		pre()
+
+
+def gennumx():
+		num = '0123456789'
+	code = input('country code + sim code :- ')
+	limit = int(input(f'\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	for a in num:
+		for b in num:
+			for c in num:
+				for d in num:
+					for e in num:
+						for f in num:
+							for g in num:
+								for h in num:
+									print("\033[1;92Number:- \033[1;96" code+a+b+c+d+e+f+g+h)
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
 
 def genpassx():
 	os.system("clear")
@@ -1320,7 +1769,6 @@ def genpassx():
 			password = password + x
 		print('\033[1;92m>[‎‎ⓇDX-Generated :- ]> \033[1;92m', password)
 		sleep(0.1)
-    
 	print('')
 	print('')
 	print('\x1b[1;96mChose An Option')
@@ -1329,23 +1777,6 @@ def genpassx():
 	now = input('\x1b[1;96mSelect :-')
 	if now=='1':
 		login()
-	elif now=='0':
-		exit()
-
-def details():
-	os.system('clear')
-	print(logo4)
-	print("\x1b[1;97m==>\x1b[1;96m[1]\x1b[1;92m  Clone 26 Country Facebook Id ")
-	print("\x1b[1;97m==>\x1b[1;96m[2]\x1b[1;93m  Generate Strong Passwords Automatically For Your Own Account ")
-	print("\x1b[1;97m==>\x1b[1;96m[3]\x1b[1;92m  Clone Old Facebook Id ")
-	print('')
-	print('')
-	print('\x1b[1;96mIf You Want To Get These.Things You Must Pay')
-	print('\x1b[1;92m [1] Continue ')
-	print('\x1b[1;91m [0] Exit ')
-	now = input('\x1b[1;96mSelect :-')
-	if now=='1':
-		Primex()
 	elif now=='0':
 		exit()
 
@@ -1375,11 +1806,11 @@ logo54 =("""
 ~?~ ??????¯??(???)??~?~?~ ??????¯??(???)??~?~?~ ??????¯??
  \033[1;95m«-----------------\033[1;91mRdx\033[1;95m-----------------»""")
 logo2 =("""
-\033[0;92m██████  ██████  ██   ██       ██████  ██████  ███████ ███    ███ ██ ██    ██ ███    ███ 
-\033[0;92m██   ██ ██   ██  ██ ██        ██   ██ ██   ██ ██      ████  ████ ██ ██    ██ ████  ████ 
-\033[0;92m██████  ██   ██   ███   █████ ██████  ██████  █████   ██ ████ ██ ██ ██    ██ ██ ████ ██ 
-\033[0;92m██   ██ ██   ██  ██ ██        ██      ██   ██ ██      ██  ██  ██ ██ ██    ██ ██  ██  ██ 
-\033[0;92m██   ██ ██████  ██   ██       ██      ██   ██ ███████ ██      ██ ██  ██████  ██      ██ 
+\033[0;92m ██████ ██       ██████  ███    ██ ██ ███    ██  ██████  
+\033[0;92m██      ██      ██    ██ ████   ██ ██ ████   ██ ██       
+\033[0;92m██      ██      ██    ██ ██ ██  ██ ██ ██ ██  ██ ██   ███ 
+\033[0;92m██      ██      ██    ██ ██  ██ ██ ██ ██  ██ ██ ██    ██ 
+\033[0;92m ██████ ███████  ██████  ██   ████ ██ ██   ████  ██████  
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
 logo3 =("""
 \x1b[1;92m    Rdx  Report 
@@ -1665,8 +2096,28 @@ logo33 =("""
 \033[0;96m██╔══╝╚════╝██║╚██╔╝██║██╔══██║██║██║     
 \033[0;96m███████╗    ██║ ╚═╝ ██║██║  ██║██║███████╗
 \033[0;96m╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
-jalan('\033[1;92m====================================================')""")
-
+\033[1;92m====================================================""")
+logo34 =("""
+\033[0;96m██████  ███████ ███    ███  ██████  
+\033[0;96m██   ██ ██      ████  ████ ██    ██ 
+\033[0;96m██   ██ █████   ██ ████ ██ ██    ██ 
+\033[0;96m██   ██ ██      ██  ██  ██ ██    ██ 
+\033[0;96m██████  ███████ ██      ██  ██████  
+\033[1;92m====================================================""")                              
+logo35 =("""
+\033[0;96m██████   █████  ███    ██ ██████   ██████  ███    ███ 
+\033[0;96m██   ██ ██   ██ ████   ██ ██   ██ ██    ██ ████  ████ 
+\033[0;96m██████  ███████ ██ ██  ██ ██   ██ ██    ██ ██ ████ ██ 
+\033[0;96m██   ██ ██   ██ ██  ██ ██ ██   ██ ██    ██ ██  ██  ██ 
+\033[0;96m██   ██ ██   ██ ██   ████ ██████   ██████  ██      ██ 
+\033[1;92m====================================================""")
+logo36 =("""
+\033[0;96m██      ██ ███    ███ ██ ████████ ███████     
+\033[0;96m██      ██ ████  ████ ██    ██    ██          
+\033[0;96m██      ██ ██ ████ ██ ██    ██    ███████     
+\033[0;96m██      ██ ██  ██  ██ ██    ██         ██     
+\033[0;96m███████ ██ ██      ██ ██    ██    ███████     
+\033[1;92m====================================================""")
 
 
 
