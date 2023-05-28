@@ -46,7 +46,6 @@ cd Rdx-Premium
 python Rdx01.py
 
 
-
 Note: (This Tools Are Paid, So You Need Permission To Use and Enjoy Rdx Premium  Tools )
 
 ```
