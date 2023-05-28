@@ -1429,16 +1429,13 @@ logo4 =("""
 \x1b[1;92m Rdx  Information 
 
                                                          
-\x1b[1;96m                                       ,,    ,,          
-\x1b[1;96m`7MM"""Yb.             mm              db  `7MM          
-\x1b[1;96m  MM    `Yb.           MM                    MM          
-\x1b[1;96m  MM     `Mb  .gP"Ya mmMMmm  ,6"Yb.  `7MM    MM  ,pP"Ybd 
-\x1b[1;96m  MM      MM ,M'   Yb  MM   8)   MM    MM    MM  8I   `" 
-\x1b[1;96m  MM     ,MP 8M""""""  MM    ,pm9MM    MM    MM  `YMMMa. 
-\x1b[1;96m  MM    ,dP' YM.    ,  MM   8M   MM    MM    MM  L.   I8 
-\x1b[1;96m.JMMmmmdP'    `Mbmmd'  `Mbmo`Moo9^Yo..JMML..JMML.M9mmmP' 
-                                                         
-                                                         
+\x1b[1;96m ██████  ███████ ████████  █████  ██ ██      ███████ 
+\x1b[1;96m██   ██ ██         ██    ██   ██ ██ ██      ██      
+\x1b[1;96m██   ██ █████      ██    ███████ ██ ██      ███████ 
+\x1b[1;96m██   ██ ██         ██    ██   ██ ██ ██           ██ 
+\x1b[1;96m██████  ███████    ██    ██   ██ ██ ███████ ███████ 
+                                                    
+                                                    
 
 \x1b[1;92m Rdx  Information 
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
