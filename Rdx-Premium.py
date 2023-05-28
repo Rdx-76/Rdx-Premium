@@ -267,8 +267,11 @@ def details():
 	os.system('clear')
 	print(logo4)
 	print("\x1b[1;97m==>\x1b[1;96m[1]\x1b[1;92m  Clone 26 Country Facebook Id ")
-	print("\x1b[1;97m==>\x1b[1;96m[2]\x1b[1;93m  Generate Strong Passwords Automatically For Your Own Account ")
-	print("\x1b[1;97m==>\x1b[1;96m[3]\x1b[1;92m  Clone Old Facebook Id ")
+	print("\x1b[1;97m==>\x1b[1;96m[2]\x1b[1;92m  Clone Old Facebook Id ")
+	print("\x1b[1;97m==>\x1b[1;96m[3]\x1b[1;92m  Brute Force => \033[1:91[Coming Soon] ")
+	print("\x1b[1;97m==>\x1b[1;96m[4]\x1b[1;93m  Generate Strong Passwords Automatically For Your Own Account ")
+	print("\x1b[1;97m==>\x1b[1;96m[5]\x1b[1;93m  Generate Random Numbers ")
+	print("\x1b[1;97m==>\x1b[1;96m[6]\x1b[1;93m  Track Number / E-mail / IP ")
 	print('')
 	print('')
 	print('\x1b[1;96mIf You Want To Get These.Things You Must Pay')
@@ -281,7 +284,7 @@ def details():
 		exit()
 
 
-def pre()
+def pre():
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[1]\x1b[1;93m Cloning Sectioon')
 	time.sleep(0.05)
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;92m Brute Force => \033[1;91[Coming Soon]')
@@ -298,7 +301,7 @@ def pre()
 	logx()
 
 
-def logx()
+def logx():
 	elif peak =='1':
 		login()
 	elif peak =='2':
@@ -344,7 +347,7 @@ def login():
     time.sleep(0.05)
     print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;96m Clone Random Facebook ID ")
     time.sleep(0.05)
-    print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[3]\x1b[1;95m Clone  Using E-mail Account \x1b[1;91m[Very Slow] ")
+    print("\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[3]\x1b[1;93m Clone  Using E-mail Account \x1b[1;91m[Very Slow] ")
     time.sleep(0.05)
     print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[0]\x1b[1;91m Exit             ')
     pilih_login()
