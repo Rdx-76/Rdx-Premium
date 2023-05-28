@@ -99,9 +99,9 @@ warna = random.choice(my_color)
 now = datetime.now()
 dt_string = now.strftime("%H:%M")
 current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
+Ya = current.year
+Mo = current.month
+Da = current.day
 today = date.today()
 logo =("""\033[0;92m
 \033[0;92m▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
