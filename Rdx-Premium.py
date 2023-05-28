@@ -1215,7 +1215,7 @@ def Rdx3x():
 	os.getuid
 	os.geteuid
 	os.system('clear')
-	print(logo)
+	print(logo34)
 	print("\033[1;92mWHAT IS YOUR NAME?")
 	name=input("\033[1;92mUSER NAME : \033[1;92m")
 	os.system('clear')
@@ -1677,6 +1677,8 @@ def phonefo():
 
 
 def genx():
+	os.system('clear')
+	print(logo37)
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[1]\x1b[1;92m Generate Strong Passwords Randomly ')
 	time.sleep(0.05)
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;92m[2]\x1b[1;96m Generate Number Randomly ')
@@ -1705,21 +1707,21 @@ def gen():
 
 
 def gennumx():
-		num = '0123456789'
-	code = input('country code + sim code :- ')
+	os.system("clear")
+	print(logo37)
+	num = '0123456789'
+	code = input('country code + sim code :- (Example - +88019 ')
 	limit = int(input(f'\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
 	for nmbr in range(limit):
-		nmp = ''.join(choice(string.digits) for _ in range(7))
-		user.append(nmp)
-	for a in num:
-		for b in num:
-			for c in num:
-				for d in num:
-					for e in num:
-						for f in num:
-							for g in num:
-								for h in num:
-									print("\033[1;92Number:- \033[1;96" code+a+b+c+d+e+f+g+h)
+		for a in num:
+			for b in num:
+				for c in num:
+					for d in num:
+						for e in num:
+							for f in num:
+								for g in num:
+									for h in num:
+										print("\033[1;92mGenerated Number :- \033[1;96m" +code+a+b+c+d+e+f+g+h )
 	print('')
 	print('')
 	print('\x1b[1;96mChose An Option')
@@ -1735,7 +1737,7 @@ def gennumx():
 
 def genpassx():
 	os.system("clear")
-	print(logo)
+	print(logo37)
 	print("\033[1;92m\n \033[1;92m[*]\033[1;96m Password generator launching...")
 	sleep(0.7)
 	MAX_LEN = int(input(' \033[1;92m[?]\033[1;96m Password length: '))
@@ -2123,7 +2125,13 @@ logo36 =("""
 \033[0;96m██      ██ ██  ██  ██ ██    ██         ██     
 \033[0;96m███████ ██ ██      ██ ██    ██    ███████     
 \033[1;92m====================================================""")
-
+logo37 =("""
+\033[0;96m ██████  ███████ ███    ██ ███████ ██████   █████  ████████ ███████ 
+\033[0;96m██       ██      ████   ██ ██      ██   ██ ██   ██    ██    ██      
+\033[0;96m██   ███ █████   ██ ██  ██ █████   ██████  ███████    ██    █████   
+\033[0;96m██    ██ ██      ██  ██ ██ ██      ██   ██ ██   ██    ██    ██      
+\033[0;96m ██████  ███████ ██   ████ ███████ ██   ██ ██   ██    ██    ███████ 
+\033[1;92m====================================================""")
 
 
 
