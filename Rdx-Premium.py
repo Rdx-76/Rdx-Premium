@@ -304,7 +304,7 @@ def pre():
 
 def logx():
 	run = input('\n   \033[0;92mCHOOSE OPTION >>>\033[1;37m ')
-	elif run =='1':
+	if run =='1':
 		login()
 	elif run =='2':
 		brutex()
