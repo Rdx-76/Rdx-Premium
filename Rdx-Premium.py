@@ -16,6 +16,7 @@ import requests
 import hashlib
 import threading
 import smtplib
+import shutil
 
 try:
 	import requests
@@ -302,21 +303,22 @@ def pre():
 
 
 def logx():
-	elif peak =='1':
+	run = input('\n   \033[0;92mCHOOSE OPTION >>>\033[1;37m ')
+	elif run =='1':
 		login()
-	elif peak =='2':
+	elif run =='2':
 		brutex()
-	elif peak =='3':
+	elif run =='3':
 		track()
-	elif peak =='4':
+	elif run =='4':
 		genx()
-	elif peak =='5':
+	elif run =='5':
 		os.system('xdg-open https://www.youtube.com/channel/UCih_lYasMeHMbEHYVzduhug')
 		pre()
-	elif peak =='6':
+	elif run =='6':
 		os.system('xdg-open https://www.youtube.com/channel/UCih_lYasMeHMbEHYVzduhug')
 		pre()
-	elif peak =='0':
+	elif run =='0':
 		exit()
 	else:
 		print('\x1b[1;97m[!] Wrong input')
