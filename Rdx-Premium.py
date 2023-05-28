@@ -11293,7 +11293,11 @@ def Rdx2x():
 	twf =[]
 	os.getuid
 	os.geteuid
-	os.system("clear")
+	os.system('clear')
+	print(logo)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo)
 	print(f' [{xr}^{x}] Example>: {xr}019,017,018,92302,92301,91778{x}')
 	print(" ══════════════════════════════════════════")
@@ -11303,7 +11307,7 @@ def Rdx2x():
 	rk4 = '017'
 	code = random.choice([rk1,rk2,rk3])                      # input(f' [{xr}■{x}] Choose : ')
 	os.system('clear')
-	print(logo)
+	print(logo1)
 	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
 	for nmbr in range(limit):
 		nmp = ''.join(random.choice(string.digits) for _ in range(7))
@@ -11317,7 +11321,25 @@ def Rdx2x():
 		pww = input(f"[*] Enter Password {bilal+1} : ")
 		RdxID.append(pww)
 	with ThreadPool(max_workers=50) as manshera:
-		clear()
+		codex = ''.join(random.choice(string.digits) for _ in range(2))
+	cod = ''.join(random.choice(string.digits) for _ in range(2))                # input(f' [{xr}■{x}] Choose : ')
+	os.system('clear')
+	print(logo1)
+	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		user.append(nmp)
+	os.system("clear")
+	print(logo53)
+	passx = 0
+	RdxID = []
+	print("")
+	for bilal in range(passx):
+		pww = input(f"[*] Enter Password {bilal+1} : ")
+		RdxID.append(pww)
+	with ThreadPool(max_workers=50) as manshera:
+		os.system("clear")
+		print(logo2)
 		tl = str(len(user))
 		jalan('\033[1;97m====================================================')
 		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
@@ -11326,6 +11348,13 @@ def Rdx2x():
 		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
 		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
 		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAuto Sim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNex       \033[1;34m: \033[0;97m"+codex)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME     \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
 		for noob in user:
 			pwx = [noob[1:]]
 			uid = code+noob
@@ -11406,7 +11435,11 @@ def Rdx3x():
 	twf =[]
 	os.getuid
 	os.geteuid
-	os.system("clear")
+	os.system('clear')
+	print(logo)
+	print("\033[1;92mWHAT IS YOUR NAME?")
+	name=input("\033[1;92mUSER NAME : \033[1;92m")
+	os.system('clear')
 	print(logo)
 	jalan("     \33[37;41m\t  USE OUR COUNTRY CODE  \33[0;m")
 	print('')
@@ -11418,13 +11451,13 @@ def Rdx3x():
 	jalan('\x1b[1;97m ══════════════════════════════════════════════════════════\n')
 	code = input(' PUT CODE : ')
 	os.system('clear')
-	print(logo)
+	print(logo1)
 	limit = int(input(f'\033[0;97m[{xr}^{x}]\033[0;92m EXAMPLE : \033[0;93m500,\x1b[38;5;208m1000,\033[0;92m2000,\033[0;93m3000,\x1b[38;5;208m5000,\033[0;92m10000,\033[0;93m20000,\x1b[38;5;208m30000,\033[0;92m50000,\033[0;93m100000,\x1b[38;5;208m1000000 ] \n\033[0;95m══════════════════════════════════════════════════════════════════════════════════ \n\033[0;97m[{xr}^{x}] \033[0;92mPUT CLONING LIMIT:\033[0;93m '))
 	for nmbr in range(limit):
 		nmp = ''.join(random.choice(string.digits) for _ in range(7))
 		user.append(nmp)
 	os.system("clear")
-	print(logo)
+	print(logo53)
 	passx = 0
 	RdxID = []
 	print("")
@@ -11432,7 +11465,8 @@ def Rdx3x():
 		pww = input(f"[*] Enter Password {bilal+1} : ")
 		RdxID.append(pww)
 	with ThreadPool(max_workers=50) as manshera:
-		clear()
+		os.system("clear")
+		print(logo2)
 		tl = str(len(user))
 		jalan('\033[1;97m====================================================')
 		jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
@@ -11441,6 +11475,12 @@ def Rdx3x():
 		jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
 		jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
 		jalan('\033[1;97m====================================================')
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mNAME           \033[1;34m: \033[0;97m"+name)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mAGENTS          \033[1;34m: \033[0;34m"+str(len(ugen)))
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSim Code       \033[1;34m: \033[0;97m"+code)
+		print(f"\033[1;92m[\033[1;34m●\033[1;92m]\033[0;92mSTART TIME      \033[1;34m: \033[0;97m{Da}/{Mo}/{Ya} ~  "+str(a)+":"+str(lt()[4])+" "+ tag+" ")
+		print(f"\x1b[1;94m\x1b[1;92m═━═━═━═━═━━═━═━═\033[1;92m R\033[1;93mD\033[1;94mX\033[1;95m-7\033[1;96m6\033[1;95m\033[1;94m\033[1;96m\x1b[1;92m ═━═━═━═━═━━═━═━═\x1b[1;91m ●   ")
+		print ('')
 		for noob in user:
 			pwx = [noob[1:]]
 			uid = code+noob
