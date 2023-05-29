@@ -1,6 +1,6 @@
 import os, sys
 os.system('git pull')
 try:
-    __import__("Rdx").menu()
+    __import__("RdxPremium").menu()
 except Exception as e:
     exit(str(e))
