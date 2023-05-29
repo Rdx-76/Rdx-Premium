@@ -43,7 +43,7 @@ git clone https://github.com/Rdx-76/Rdx-Premium
 
 cd Rdx-Premium
 
-python Rdx01.py
+python Premium.py
 
 
 Note: (This Tools Are Paid, 
@@ -57,7 +57,7 @@ Tools )
 
 ```
 
-pkg update ; pkg upgrade ; pkg install python ; pkg install python2 ; pip install requests ; pip install mechanize; pip install bs4, pkg install git ; git clone https://github.com/Rdx-76/Rdx-Premium ; cd Rdx-Premium; python Rdx01.py
+pkg update ; pkg upgrade ; pkg install python ; pkg install python2 ; pip install requests ; pip install mechanize; pip install bs4, pkg install git ; git clone https://github.com/Rdx-76/Rdx-Premium ; cd Rdx-Premium; python Premium.py
 
 Note: (This Tools Are Paid, So You Need Permission To Enjoy Rdx Pro Tools )
 
